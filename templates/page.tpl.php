@@ -91,32 +91,37 @@
   <script type="text/javascript"><?php /* Needed to avoid Flash of Unstyled Content in IE */ ?> </script>
 </head>
 <body class="<?php print $body_classes; ?>">
+
   <div id="page">
-    <div id="header">
-      <div id="logo-title">
+   <div id="above">
+    <?php if (!empty($secondary_links)): ?>
+      <div id="secondary" class="clear-block">
+        <?php print theme('links', $secondary_links, array('class' => 'links secondary-links')); ?>
+      </div>
+    <?php endif; ?>
+    <div id="logo-title">
 
-        <?php if (!empty($logo)): ?>
-          <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
-            <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
-          </a>
-        <?php endif; ?>
-
-        <div id="name-and-slogan">
-          <?php if (!empty($site_name)): ?>
-            <h1 id="site-name">
-              <a href="<?php print $front_page ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
-            </h1>
-          <?php endif; ?>
-
-          <?php if (!empty($site_slogan)): ?>
-            <div id="site-slogan"><?php print $site_slogan; ?></div>
-          <?php endif; ?>
-        </div> <!-- /name-and-slogan -->
-      </div> <!-- /logo-title -->
-
-      <?php if (!empty($search_box)): ?>
-        <div id="search-box"><?php print $search_box; ?></div>
+      <?php if (!empty($logo)): ?>
+        <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
+          <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
+        </a>
       <?php endif; ?>
+    </div> <!-- /logo-title -->
+  </div> <!-- /above -->
+
+  <div id="name-and-slogan">
+    <?php if (!empty($site_name)): ?>
+      <h1 id="site-name">
+        <a href="<?php print $front_page ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
+      </h1>
+    <?php endif; ?>
+
+    <?php if (!empty($search_box)): ?>
+      <div id="search-box"><?php print $search_box; ?></div>
+    <?php endif; ?>
+  </div> <!-- /name-and-slogan -->
+
+   <div id="header">
 
       <?php if (!empty($header)): ?>
         <div id="header-region">
@@ -135,11 +140,6 @@
           </div>
         <?php endif; ?>
 
-        <?php if (!empty($secondary_links)): ?>
-          <div id="secondary" class="clear-block">
-            <?php print theme('links', $secondary_links, array('class' => 'links secondary-links')); ?>
-          </div>
-        <?php endif; ?>
       </div> <!-- /navigation -->
 
       <?php if (!empty($left)): ?>
