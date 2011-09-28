@@ -1,4 +1,10 @@
 /* page.tpl.php */
+/* line 9, ../sass/tcesp.scss */
+#page {
+  width: 960px;
+  margin: 0 auto;
+}
+
 /* block.tpl.php */
 /* node.tpl.php */
 /* user-profile.tpl.php */
