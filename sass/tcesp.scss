@@ -26,7 +26,7 @@ body { @extend .-tcesp-body; }
 
 #header-region { @extend .-tcesp-header-region; }
 
-#container { @extend .-tcesp-main; }
+#container { @extend .-tcesp-container; }
 
 #navigation {
   @extend .-tcesp-navigation; }
