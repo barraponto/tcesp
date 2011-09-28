@@ -37,9 +37,15 @@ body { @extend .-tcesp-body; }
   
 .secondary-links  { @extend .-tcesp-menu; }
 
-#sidebar-left { @extend .-tcesp-sidebar; }
+#sidebar-left { 
+  @extend .-tcesp-sidebar;
+  float: left;
+  width: $drupal-first-sidebar-width; }
 
-#main { @extend .-tcesp-main; }
+#main { 
+  @extend .-tcesp-main;
+  #sidebar-left + & { 
+    margin-left: $drupal-first-sidebar-width; } }
 
 #mission { @extend .-tcesp-mission; }
 

@@ -20,6 +20,17 @@
   margin: 0 auto;
 }
 
+/* line 40, ../sass/tcesp.scss */
+#sidebar-left {
+  float: left;
+  width: 200px;
+}
+
+/* line 47, ../sass/tcesp.scss */
+#sidebar-left + #main {
+  margin-left: 200px;
+}
+
 /* block.tpl.php */
 /* node.tpl.php */
 /* user-profile.tpl.php */
