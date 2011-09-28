@@ -87,7 +87,8 @@ $tcesp-base-font-size: 14px;
   a { @extend .-tcesp-a; } }
 
 // Page Components
-.-tcesp-body { }
+.-tcesp-body {
+  @include background-with-css2-fallback(image-url('stripes.png') repeat, linear-gradient(white, #eaeaea 42em)); }
 
 .-tcesp-skip-link { }
 
@@ -108,7 +109,8 @@ $tcesp-base-font-size: 14px;
 
 .-tcesp-header-region { }
 
-.-tcesp-container { }
+.-tcesp-container {
+  background-color: white; }
 
 .-tcesp-navigation { }
 

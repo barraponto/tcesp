@@ -1,3 +1,18 @@
+/* line 90, ../sass/_tcesp-skin.scss */
+.-tcesp-body, body {
+  background: url('../images/stripes.png?1317247346') repeat, -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #eaeaea));
+  background: url('../images/stripes.png?1317247346') repeat, -webkit-linear-gradient(#ffffff, #eaeaea 42em);
+  background: url('../images/stripes.png?1317247346') repeat, -moz-linear-gradient(#ffffff, #eaeaea 42em);
+  background: url('../images/stripes.png?1317247346') repeat, -o-linear-gradient(#ffffff, #eaeaea 42em);
+  background: url('../images/stripes.png?1317247346') repeat, -ms-linear-gradient(#ffffff, #eaeaea 42em);
+  background: url('../images/stripes.png?1317247346') repeat, linear-gradient(#ffffff, #eaeaea 42em);
+}
+
+/* line 112, ../sass/_tcesp-skin.scss */
+.-tcesp-container, #container {
+  background-color: white;
+}
+
 /* page.tpl.php */
 /* line 9, ../sass/tcesp.scss */
 #page {
