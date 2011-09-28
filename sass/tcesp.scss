@@ -1,4 +1,4 @@
-
+@import "compass";
 @import "tcesp-skin";
 @import "_tcesp-base";
 
@@ -7,9 +7,9 @@
 body { @extend .-tcesp-body; }
 
 #page { 
+  @extend .-tcesp-page;
   width: $drupal-width;
-  margin: 0 auto;
-  @extend .-tcesp-page; }
+  margin: 0 auto; }
 
 #header { 
   @extend .-tcesp-header; }
