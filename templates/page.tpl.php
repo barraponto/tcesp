@@ -133,9 +133,9 @@
 
     <div id="container" class="clear-block">
 
-      <?php if (!empty($left)): ?>
+      <?php if (!empty($sidebar_first)): ?>
         <div id="sidebar-left" class="column sidebar">
-          <?php print $left; ?>
+          <?php print $sidebar_first; ?>
         </div> <!-- /sidebar-left -->
       <?php endif; ?>
 
@@ -149,7 +149,19 @@
           <?php if (!empty($messages)): print $messages; endif; ?>
           <?php if (!empty($help)): print $help; endif; ?>
           <div id="content-content" class="clear-block">
+            <?php if($content_top): ?>
+              <div id="content-top">
+                <?php print $content_top; ?>
+              </div>
+            <?php endif; ?>
+
             <?php print $content; ?>
+
+            <?php if($content_bottom): ?>
+              <div id="content-bottom">
+                <?php print $content_bottom; ?>
+              </div>
+            <?php endif; ?>
           </div> <!-- /content-content -->
           <?php print $feed_icons; ?>
         </div> <!-- /content -->
@@ -157,6 +169,12 @@
       </div></div> <!-- /main-squeeze /main -->
 
     </div> <!-- /container -->
+
+    <?php if($page_bottom): ?>
+      <div id="page-bottom">
+        <?php print $page_bottom; ?>
+      </div>
+    <?php endif; ?>
 
     <div id="footer-wrapper">
       <div id="footer">

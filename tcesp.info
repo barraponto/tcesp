@@ -5,3 +5,10 @@ core = 6.x
 engine = phptemplate
 
 stylesheets[all][] = stylesheets/tcesp.css
+
+regions[header] = Header
+regions[sidebar_first] = First sidebar
+regions[content_top] = Content top
+regions[content_bottom] = Content bottom
+regions[page_bottom] = Page bottom
+regions[footer] = Footer
