@@ -133,15 +133,6 @@
 
     <div id="container" class="clear-block">
 
-      <div id="navigation" class="menu <?php if (!empty($primary_links)) { print "withprimary"; } if (!empty($secondary_links)) { print " withsecondary"; } ?> ">
-        <?php if (!empty($primary_links)): ?>
-          <div id="primary" class="clear-block">
-            <?php print theme('links', $primary_links, array('class' => 'links primary-links')); ?>
-          </div>
-        <?php endif; ?>
-
-      </div> <!-- /navigation -->
-
       <?php if (!empty($left)): ?>
         <div id="sidebar-left" class="column sidebar">
           <?php print $left; ?>
@@ -164,12 +155,6 @@
         </div> <!-- /content -->
 
       </div></div> <!-- /main-squeeze /main -->
-
-      <?php if (!empty($right)): ?>
-        <div id="sidebar-right" class="column sidebar">
-          <?php print $right; ?>
-        </div> <!-- /sidebar-right -->
-      <?php endif; ?>
 
     </div> <!-- /container -->
 
