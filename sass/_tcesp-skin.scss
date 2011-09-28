@@ -1,0 +1,227 @@
+
+// This variable controls the total width of the container div
+// You can use px for a Fixed layout or % for a Liquid layout
+$tcesp-width: 960px;
+
+// These variables control the size of the sidebars
+$tcesp-first-sidebar-width: 200px;
+$tcesp-second-sidebar-width: 200px;
+
+// This variable positions the content relative to the sidebars
+// Possible values are first, last, middle
+$tcesp-content-position: "middle";
+
+// These variables control the typefaces as defined in html-reset.css
+$tcesp-proportional-typeface: Verdana, Tahoma, "DejaVu Sans", sans-serif;
+$tcesp-monospaced-typeface: "Courier New", "DejaVu Sans Mono", monospace;
+
+// These variables control the font sizes as defined in html-reset.css
+$tcesp-base-font-size: 14px;
+
+//HTML Elements
+.-tcesp-h2 { } 
+
+.-tcesp-h3 { }
+
+.-tcesp-h4 { }
+
+.-tcesp-p { }
+
+.-tcesp-li { }
+
+.-tcesp-ul {
+  li { @extend .-tcesp-li; } }
+
+.-tcesp-ol {
+  li { @extend .-tcesp-li; } }
+
+.-tcesp-blockquote { }
+
+.-tcesp-cite { }
+
+.-tcesp-a {
+  &:link { }
+  &:visited { }
+  &:hover { }
+  &:focus { }
+  &:active { } }
+
+.-tcesp-pre { }
+
+.-tcesp-code { }
+
+.-tcesp-table {
+  caption { }
+  tr {
+    &.odd { }
+    &.even { }
+    th { }
+    td { }
+    thead & { }
+    tfoot & { }
+    tbody & { } } }
+
+// Content Classes
+.-tcesp-node-content {
+  h2 { @extend .-tcesp-h2; }
+  h3 { @extend .-tcesp-h3; }
+  h4 { @extend .-tcesp-h4; }
+  p { @extend .-tcesp-p; }
+  li { @extend .-tcesp-li; }
+  ul { @extend .-tcesp-ul; }
+  ol { @extend .-tcesp-ol; }
+  pre { @extend .-tcesp-pre; }
+  code { @extend .-tcesp-code; }
+  blockquote { @extend .-tcesp-blockquote; }
+  cite { @extend .-tcesp-cite; }
+  a { @extend .-tcesp-a; }
+  table { @extend .-tcesp-table; } }
+
+.-tcesp-block-content {
+  h3 { @extend .-tcesp-h3; }
+  h4 { @extend .-tcesp-h4; }
+  p { @extend .-tcesp-p; }
+  ul { @extend .-tcesp-ul; }
+  ol { @extend .-tcesp-ol; }
+  li { @extend .-tcesp-li; }
+  a { @extend .-tcesp-a; } }
+
+// Page Components
+.-tcesp-body { }
+
+.-tcesp-skip-link { }
+
+.-tcesp-page { }
+
+.-tcesp-header { }
+
+.-tcesp-logo-title { } // usually a #logo-title wrapper div (YMMV)
+
+.-tcesp-logo { }
+
+.-tcesp-name-and-slogan { } // usually a #name-and-slogan wrapper div (YMMV) 
+
+.-tcesp-site-name {
+  a { } }
+
+.-tcesp-site-slogan { }
+
+.-tcesp-header-region { }
+
+.-tcesp-container { }
+
+.-tcesp-navigation { }
+
+.-tcesp-menu { // by default, both menus inherit these styles
+  > li { // use '>' to target only child items
+    &.first { }
+    &.last { }
+    &.expanded { } } }
+
+.-tcesp-submenu { // think expanded menus, not secondary menus
+    > li { // use '>' to target only child items
+    &.first { }
+    &.last { }
+    &.expanded { } } }
+
+.-tcesp-sidebar { } // by default both sidebars inherit these styles
+
+.-tcesp-main { }
+
+.-tcesp-mission { }
+
+.-tcesp-breadcrumb {
+  a { } }
+
+.-tcesp-content { }
+
+.-tcesp-tabs {
+  .primary { }
+  .secondary { }
+  // the following styles apply to both tab groups.
+  ul { }
+  li { } 
+  a { } 
+  a.active { } }
+
+.-tcesp-messages {
+  &.status { }
+  &.warning { }
+  &.error { }
+  &.help { }
+
+  // when there is more than one message, they get wrapped in a ul
+  ul { }
+  li { }
+}
+
+.-tcesp-pager {
+  .pager-item { }
+  .pager-current { }
+  .pager-previous { }
+  .pager-next { }
+  .pager-first { }
+  .pager-last { }
+  a { } }
+
+.-tcesp-feed-icons {
+  .feed-icon { } }
+  
+.-tcesp-title { } 
+
+.-tcesp-content-area { }
+
+.-tcesp-footer { }
+
+.-tcesp-footer-message { }
+
+// Block Components
+// Make copies of these components for a diversity of block styles
+.-tcesp-block { }
+
+.-tcesp-block-title { }
+
+.-tcesp-block-content { @extend .-tcesp-block-content; }
+
+// Node Components
+// Make copies of these components for a diversity of node styles
+.-tcesp-node { }
+
+.-tcesp-node-picture { }
+
+.-tcesp-node-title { } //meant for node listings, see also .-tcesp-title
+
+.-tcesp-node-meta {
+
+.-tcesp-node-submitted { }
+
+.-tcesp-node-terms { } }
+
+.-tcesp-node-content { @extend .-tcesp-node-content; }
+
+.-tcesp-node-links {
+  li {
+    &.first { }
+    &.last { } } }
+
+.-tcesp-node-sticky { }
+
+.-tcesp-node-unpublished {
+    .unpublished { } }
+
+.-tcesp-node-by-viewer { }
+
+.-tcesp-node-preview { }
+
+// Profile Components
+.-tcesp-profile { }
+
+.-tcesp-profile-picture { }
+
+.-tcesp-profile-category-header { }
+
+.-tcesp-profile-category-wrapper { }
+
+.-tcesp-profile-field-label { }
+
+.-tcesp-profile-field-value { }

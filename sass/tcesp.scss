@@ -1,0 +1,108 @@
+
+@import "tcesp-skin";
+@import "_tcesp-base";
+
+/* page.tpl.php */
+
+body { @extend .-tcesp-body; }
+
+#page { @extend .-tcesp-page; }
+
+#header { 
+  @extend .-tcesp-header; }
+
+#logo-title { @extend .-tcesp-logo-title; }
+
+#logo { @extend .-tcesp-logo; }
+
+#name-and-slogan { @extend .-tcesp-name-and-slogan; }
+
+#site-name { @extend .-tcesp-site-name; }
+
+#site-slogan { @extend .-tcesp-site-slogan; }
+
+#header-region { @extend .-tcesp-header-region; }
+
+#container { @extend .-tcesp-main; }
+
+#navigation {
+  @extend .-tcesp-navigation; }
+
+.primary-links  {
+  @extend .-tcesp-menu;
+  > li > .links { @extend .-tcesp-submenu; } }
+  
+.secondary-links  { @extend .-tcesp-menu; }
+
+#sidebar-left { @extend .-tcesp-sidebar; }
+
+#main { @extend .-tcesp-main; }
+
+#mission { @extend .-tcesp-mission; }
+
+#breadcrumb { @extend .-tcesp-breadcrumb; }  
+
+#content {
+  @extend .-tcesp-content;
+  
+  div.tabs { @extend .-tcesp-tabs; }
+    
+  .messages { @extend .-tcesp-messages; }
+
+  .pager { @extend .-tcesp-pager; }
+    
+  //drupal prints only a link with an image inside, beware.
+  .feed-icon { @extend .-tcesp-feed-icons; } }
+  
+#page-title { @extend .-tcesp-title; }
+
+#content-content { @extend .-tcesp-content-area; }
+
+#sidebar-right { @extend .-tcesp-sidebar; }
+
+#footer-wrapper {
+  @extend .-tcesp-footer;
+  
+  //Drupal will print the footer message right away, but theming the
+  //whole region isn't a good idea. Copy page.tpl.php to your theme and
+  //edit it to wrap the $footer_message variable
+  //@extend .-tcesp-footer-message;
+
+ }
+
+/* block.tpl.php */
+.block {
+  // these are Kit regions blocks, set as examples for any region specific block styling
+  #content-content & { @extend .-tcesp-content-block; }
+  #sidebar-left & { @extend .-tcesp-sidebar-block; }
+  #sidebar-right & { @extend .-tcesp-sidebar-block; }
+
+  // these selectors will affect all of your blocks, beware!
+  // try scoping the selectors by region, as shown above
+  @extend .-tcesp-block; 
+  > h2 { @extend .-tcesp-block-title; }
+  .content { @extend .-tcesp-block-content; } }
+
+/* node.tpl.php */
+.node {
+  @extend .-tcesp-node;
+  .picture { @extend .-tcesp-node-picture; }
+  .title { @extend .-tcesp-node-title; }
+  .meta { @extend .-tcesp-node-meta; }
+  .submitted { @extend .-tcesp-node-submitted; }
+  .terms { @extend .-tcesp-node-terms; }
+  .content { @extend .-tcesp-node-content; }
+  .links { @extend .-tcesp-node-links; }
+  &.sticky { @extend .-tcesp-node-sticky; }
+  &.node-unpublished { @extend .-tcesp-node-unpublished; }
+  .preview & { @extend .-tcesp-node-preview; } }
+
+/* user-profile.tpl.php */
+.profile {
+  @extend .-tcesp-profile;
+  .picture { @extend .-tcesp-profile-picture; }
+  h3 { @extend .-tcesp-profile-category-title; }
+  dl { @extend .-tcesp-profile-category-wrapper; }
+  dt { @extend .-tcesp-profile-field-label; }
+  dd { @extend .-tcesp-profile-field-value; } }
+  
