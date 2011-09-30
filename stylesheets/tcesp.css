@@ -19,33 +19,48 @@
   padding: 20px;
 }
 
-/* line 110, ../sass/_tcesp-skin.scss */
-.-tcesp-site-name, #site-name {
-  margin: 0;
+/* line 108, ../sass/_tcesp-skin.scss */
+.-tcesp-name-and-slogan, #name-and-slogan {
+  *zoom: 1;
 }
-/* line 112, ../sass/_tcesp-skin.scss */
+/* line 38, ../../../../../../../.rvm/gems/ruby-1.9.2-p180@compassdev/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.-tcesp-name-and-slogan:after, #name-and-slogan:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 111, ../sass/_tcesp-skin.scss */
+.-tcesp-site-name, #site-name {
+  float: left;
+  margin: 0;
+  font-size: 1.75em;
+  line-height: 1.5em;
+  text-indent: 1em;
+}
+/* line 117, ../sass/_tcesp-skin.scss */
 .-tcesp-site-name a, #site-name a {
   color: #5a5a5a;
   font-family: Amaranth, "Courier New", "DejaVu Sans Mono", monospace;
   text-decoration: none;
 }
 
-/* line 121, ../sass/_tcesp-skin.scss */
+/* line 126, ../sass/_tcesp-skin.scss */
 .-tcesp-container, #container {
   background-color: white;
 }
 
-/* line 126, ../sass/_tcesp-skin.scss */
+/* line 131, ../sass/_tcesp-skin.scss */
 .-tcesp-menu, ul.primary-links {
   font-family: Amaranth, "Courier New", "DejaVu Sans Mono", monospace;
 }
 
-/* line 133, ../sass/_tcesp-skin.scss */
+/* line 138, ../sass/_tcesp-skin.scss */
 .-tcesp-secondary-menu-wrapper, #secondary {
   position: relative;
   overflow: visible;
 }
-/* line 136, ../sass/_tcesp-skin.scss */
+/* line 141, ../sass/_tcesp-skin.scss */
 .-tcesp-secondary-menu-wrapper:before, #secondary:before {
   -moz-box-shadow: 0 0 3px #999999;
   -webkit-box-shadow: 0 0 3px #999999;
@@ -59,32 +74,32 @@
   height: 3px;
   content: "";
 }
-/* line 146, ../sass/_tcesp-skin.scss */
+/* line 151, ../sass/_tcesp-skin.scss */
 .-tcesp-secondary-menu-wrapper.items-1:before, .items-1#secondary:before {
   width: 130px;
 }
-/* line 146, ../sass/_tcesp-skin.scss */
+/* line 151, ../sass/_tcesp-skin.scss */
 .-tcesp-secondary-menu-wrapper.items-2:before, .items-2#secondary:before {
   width: 290px;
 }
-/* line 146, ../sass/_tcesp-skin.scss */
+/* line 151, ../sass/_tcesp-skin.scss */
 .-tcesp-secondary-menu-wrapper.items-3:before, .items-3#secondary:before {
   width: 450px;
 }
-/* line 146, ../sass/_tcesp-skin.scss */
+/* line 151, ../sass/_tcesp-skin.scss */
 .-tcesp-secondary-menu-wrapper.items-4:before, .items-4#secondary:before {
   width: 610px;
 }
-/* line 146, ../sass/_tcesp-skin.scss */
+/* line 151, ../sass/_tcesp-skin.scss */
 .-tcesp-secondary-menu-wrapper.items-5:before, .items-5#secondary:before {
   width: 770px;
 }
-/* line 146, ../sass/_tcesp-skin.scss */
+/* line 151, ../sass/_tcesp-skin.scss */
 .-tcesp-secondary-menu-wrapper.items-6:before, .items-6#secondary:before {
   width: 930px;
 }
 
-/* line 152, ../sass/_tcesp-skin.scss */
+/* line 157, ../sass/_tcesp-skin.scss */
 .-tcesp-secondary-menu, ul.secondary-links {
   margin: 0;
   padding: 0;
@@ -116,19 +131,19 @@
 .-tcesp-secondary-menu li.last, ul.secondary-links li.last {
   padding-right: 0;
 }
-/* line 155, ../sass/_tcesp-skin.scss */
+/* line 160, ../sass/_tcesp-skin.scss */
 .-tcesp-secondary-menu > li, ul.secondary-links > li {
   background-color: white;
   width: 120px;
   position: relative;
   padding: 0.5em 30px 0.5em 10px;
 }
-/* line 160, ../sass/_tcesp-skin.scss */
+/* line 165, ../sass/_tcesp-skin.scss */
 .-tcesp-secondary-menu > li a, ul.secondary-links > li a {
   color: black;
   text-decoration: none;
 }
-/* line 163, ../sass/_tcesp-skin.scss */
+/* line 168, ../sass/_tcesp-skin.scss */
 .-tcesp-secondary-menu > li:after, ul.secondary-links > li:after {
   -moz-box-shadow: 3px 0 3px #cccccc;
   -webkit-box-shadow: 3px 0 3px #cccccc;
@@ -148,18 +163,53 @@
   content: "";
   background-color: white;
 }
-/* line 174, ../sass/_tcesp-skin.scss */
+/* line 179, ../sass/_tcesp-skin.scss */
 .-tcesp-secondary-menu > li.first, ul.secondary-links > li.first {
   padding-left: 0.5em;
 }
-/* line 176, ../sass/_tcesp-skin.scss */
+/* line 181, ../sass/_tcesp-skin.scss */
 .-tcesp-secondary-menu > li.last, ul.secondary-links > li.last {
   padding-right: 0;
 }
-/* line 178, ../sass/_tcesp-skin.scss */
+/* line 183, ../sass/_tcesp-skin.scss */
 .-tcesp-secondary-menu > li.last:after, ul.secondary-links > li.last:after {
   right: -15px;
   width: 30px;
+}
+
+/* line 296, ../sass/_tcesp-skin.scss */
+#search-box {
+  float: right;
+  padding: 0.75em 0 .25em;
+}
+/* line 299, ../sass/_tcesp-skin.scss */
+#search-box .form-item {
+  margin: 0;
+}
+/* line 300, ../sass/_tcesp-skin.scss */
+#search-box label {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute;
+}
+/* line 303, ../sass/_tcesp-skin.scss */
+#search-box .form-text {
+  background-color: #BFDBE5;
+  padding: 0.25em;
+  border: none;
+}
+/* line 307, ../sass/_tcesp-skin.scss */
+#search-box .form-submit {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  background-image: url('../images/search.png?1317416023');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-color: #eaeaea;
+  width: 2.5em;
+  height: 100%;
+  padding: 0.25em;
+  border: none;
 }
 
 /* page.tpl.php */

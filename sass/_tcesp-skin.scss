@@ -105,10 +105,15 @@ $tcesp-base-font-size: 14px;
   padding: 20px;
 }
 
-.-tcesp-name-and-slogan { } // usually a #name-and-slogan wrapper div (YMMV) 
+.-tcesp-name-and-slogan {
+  @include pie-clearfix; } // usually a #name-and-slogan wrapper div (YMMV) 
 
 .-tcesp-site-name {
+  float: left;
   margin: 0;
+  font-size: 1.75em;
+  line-height: 1.5em;
+  text-indent: 1em; 
   a {
     @include link-colors(#5a5a5a);
     font-family: $tcesp-versal-typeface;
@@ -287,3 +292,22 @@ $tcesp-base-font-size: 14px;
 .-tcesp-profile-field-label { }
 
 .-tcesp-profile-field-value { }
+
+#search-box {
+  float: right;
+  padding: 0.75em 0 .25em;
+  .form-item { margin: 0; }
+  label {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute; }
+  .form-text {
+    background-color: #BFDBE5;
+    padding: 0.25em;
+    border: none; }
+  .form-submit {
+    @include replace-text('search.png');
+    background-color: #eaeaea;
+    width: 2.5em;
+    height: 100%;
+    padding: 0.25em;
+    border: none; } }
