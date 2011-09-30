@@ -8,17 +8,83 @@
   background: url('../images/stripes.png?1317247346') repeat, linear-gradient(#ffffff, #eaeaea 42em);
 }
 
-/* line 113, ../sass/_tcesp-skin.scss */
+/* line 100, ../sass/_tcesp-skin.scss */
+.-tcesp-logo-title, #logo-title {
+  background-image: url('../images/banner.png?1317409968');
+}
+
+/* line 103, ../sass/_tcesp-skin.scss */
+.-tcesp-logo, #logo {
+  display: block;
+  padding: 20px;
+}
+
+/* line 110, ../sass/_tcesp-skin.scss */
+.-tcesp-site-name, #site-name {
+  margin: 0;
+}
+/* line 112, ../sass/_tcesp-skin.scss */
+.-tcesp-site-name a, #site-name a {
+  color: #5a5a5a;
+  font-family: Amaranth, "Courier New", "DejaVu Sans Mono", monospace;
+  text-decoration: none;
+}
+
+/* line 121, ../sass/_tcesp-skin.scss */
 .-tcesp-container, #container {
   background-color: white;
 }
 
-/* line 118, ../sass/_tcesp-skin.scss */
+/* line 126, ../sass/_tcesp-skin.scss */
 .-tcesp-menu, ul.primary-links {
   font-family: Amaranth, "Courier New", "DejaVu Sans Mono", monospace;
 }
 
-/* line 125, ../sass/_tcesp-skin.scss */
+/* line 133, ../sass/_tcesp-skin.scss */
+.-tcesp-secondary-menu-wrapper, #secondary {
+  position: relative;
+  overflow: visible;
+}
+/* line 136, ../sass/_tcesp-skin.scss */
+.-tcesp-secondary-menu-wrapper:before, #secondary:before {
+  -moz-box-shadow: 0 0 3px #999999;
+  -webkit-box-shadow: 0 0 3px #999999;
+  -o-box-shadow: 0 0 3px #999999;
+  box-shadow: 0 0 3px #999999;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 130px;
+  height: 3px;
+  content: "";
+}
+/* line 146, ../sass/_tcesp-skin.scss */
+.-tcesp-secondary-menu-wrapper.items-1:before, .items-1#secondary:before {
+  width: 130px;
+}
+/* line 146, ../sass/_tcesp-skin.scss */
+.-tcesp-secondary-menu-wrapper.items-2:before, .items-2#secondary:before {
+  width: 290px;
+}
+/* line 146, ../sass/_tcesp-skin.scss */
+.-tcesp-secondary-menu-wrapper.items-3:before, .items-3#secondary:before {
+  width: 450px;
+}
+/* line 146, ../sass/_tcesp-skin.scss */
+.-tcesp-secondary-menu-wrapper.items-4:before, .items-4#secondary:before {
+  width: 610px;
+}
+/* line 146, ../sass/_tcesp-skin.scss */
+.-tcesp-secondary-menu-wrapper.items-5:before, .items-5#secondary:before {
+  width: 770px;
+}
+/* line 146, ../sass/_tcesp-skin.scss */
+.-tcesp-secondary-menu-wrapper.items-6:before, .items-6#secondary:before {
+  width: 930px;
+}
+
+/* line 152, ../sass/_tcesp-skin.scss */
 .-tcesp-secondary-menu, ul.secondary-links {
   margin: 0;
   padding: 0;
@@ -50,24 +116,24 @@
 .-tcesp-secondary-menu li.last, ul.secondary-links li.last {
   padding-right: 0;
 }
-/* line 128, ../sass/_tcesp-skin.scss */
+/* line 155, ../sass/_tcesp-skin.scss */
 .-tcesp-secondary-menu > li, ul.secondary-links > li {
   background-color: white;
   width: 120px;
   position: relative;
   padding: 0.5em 30px 0.5em 10px;
 }
-/* line 133, ../sass/_tcesp-skin.scss */
+/* line 160, ../sass/_tcesp-skin.scss */
 .-tcesp-secondary-menu > li a, ul.secondary-links > li a {
   color: black;
   text-decoration: none;
 }
-/* line 136, ../sass/_tcesp-skin.scss */
+/* line 163, ../sass/_tcesp-skin.scss */
 .-tcesp-secondary-menu > li:after, ul.secondary-links > li:after {
-  -moz-box-shadow: 3px 0 3px #666666;
-  -webkit-box-shadow: 3px 0 3px #666666;
-  -o-box-shadow: 3px 0 3px #666666;
-  box-shadow: 3px 0 3px #666666;
+  -moz-box-shadow: 3px 0 3px #cccccc;
+  -webkit-box-shadow: 3px 0 3px #cccccc;
+  -o-box-shadow: 3px 0 3px #cccccc;
+  box-shadow: 3px 0 3px #cccccc;
   -moz-transform: skew(40deg, 0);
   -webkit-transform: skew(40deg, 0);
   -o-transform: skew(40deg, 0);
@@ -82,11 +148,15 @@
   content: "";
   background-color: white;
 }
-/* line 148, ../sass/_tcesp-skin.scss */
+/* line 174, ../sass/_tcesp-skin.scss */
+.-tcesp-secondary-menu > li.first, ul.secondary-links > li.first {
+  padding-left: 0.5em;
+}
+/* line 176, ../sass/_tcesp-skin.scss */
 .-tcesp-secondary-menu > li.last, ul.secondary-links > li.last {
   padding-right: 0;
 }
-/* line 150, ../sass/_tcesp-skin.scss */
+/* line 178, ../sass/_tcesp-skin.scss */
 .-tcesp-secondary-menu > li.last:after, ul.secondary-links > li.last:after {
   right: -15px;
   width: 30px;
@@ -99,13 +169,13 @@
   margin: 0 auto;
 }
 
-/* line 40, ../sass/tcesp.scss */
+/* line 42, ../sass/tcesp.scss */
 #sidebar-left {
   float: left;
   width: 200px;
 }
 
-/* line 47, ../sass/tcesp.scss */
+/* line 49, ../sass/tcesp.scss */
 #sidebar-left + #main {
   margin-left: 200px;
 }

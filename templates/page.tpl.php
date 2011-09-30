@@ -95,7 +95,7 @@
   <div id="page">
    <div id="above">
     <?php if (!empty($secondary_links)): ?>
-      <div id="secondary" class="clear-block">
+      <div id="secondary" class="clear-block items-<?php print count($secondary_links); ?>">
         <?php print theme('links', $secondary_links, array('class' => 'links secondary-links')); ?>
       </div>
     <?php endif; ?>
@@ -140,7 +140,6 @@
       <?php endif; ?>
 
       <div id="main" class="column"><div id="main-squeeze">
-        <?php if (!empty($breadcrumb)): ?><div id="breadcrumb"><?php print $breadcrumb; ?></div><?php endif; ?>
         <?php if (!empty($mission)): ?><div id="mission"><?php print $mission; ?></div><?php endif; ?>
 
         <div id="content">

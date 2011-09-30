@@ -34,7 +34,9 @@ body { @extend .-tcesp-body; }
 ul.primary-links  {
   @extend .-tcesp-menu;
   > li > .links { @extend .-tcesp-submenu; } }
-  
+
+#secondary { @extend .-tcesp-secondary-menu-wrapper; }
+
 ul.secondary-links  { @extend .-tcesp-secondary-menu; }
 
 #sidebar-left { 

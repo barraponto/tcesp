@@ -97,14 +97,22 @@ $tcesp-base-font-size: 14px;
 
 .-tcesp-header { }
 
-.-tcesp-logo-title { } // usually a #logo-title wrapper div (YMMV)
+.-tcesp-logo-title { // usually a #logo-title wrapper div (YMMV)
+  background-image: image-url('banner.png'); } 
 
-.-tcesp-logo { }
+.-tcesp-logo {
+  display: block;
+  padding: 20px;
+}
 
 .-tcesp-name-and-slogan { } // usually a #name-and-slogan wrapper div (YMMV) 
 
 .-tcesp-site-name {
-  a { } }
+  margin: 0;
+  a {
+    @include link-colors(#5a5a5a);
+    font-family: $tcesp-versal-typeface;
+    text-decoration: none; } }
 
 .-tcesp-site-slogan { }
 
@@ -122,6 +130,25 @@ $tcesp-base-font-size: 14px;
     &.last { }
     &.expanded { } } }
 
+.-tcesp-secondary-menu-wrapper {
+  position: relative;
+  overflow: visible;
+  &:before {
+    @include box-shadow(0 0 3px #999);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 130px;
+    height: 3px;
+    content: ""; }
+  @for $i from 1 through 6 {
+    &.items-#{$i}:before {
+      width: 130px + ($i - 1) * 160px ;
+    }
+  }
+}
+
 .-tcesp-secondary-menu { // by default, both menus inherit these styles
   @include horizontal-list;
   font-family: $tcesp-versal-typeface;
@@ -134,7 +161,7 @@ $tcesp-base-font-size: 14px;
       @include link-colors(black);
       text-decoration: none; }
     &:after {
-      @include box-shadow(3px 0 3px #666);
+      @include box-shadow(3px 0 3px #ccc);
       @include skew(40deg, 0);
       position: absolute;
       right: 15px;
@@ -144,7 +171,8 @@ $tcesp-base-font-size: 14px;
       height: 100%;
       content: "";
       background-color: white; }
-    &.first { }
+    &.first {
+      padding-left: 0.5em; }
     &.last {
       padding-right: 0;
       &:after {
