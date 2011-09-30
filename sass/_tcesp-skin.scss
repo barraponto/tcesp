@@ -12,6 +12,7 @@ $tcesp-second-sidebar-width: 200px;
 $tcesp-content-position: "middle";
 
 // These variables control the typefaces as defined in html-reset.css
+$tcesp-versal-typeface: Amaranth, "Courier New", "DejaVu Sans Mono", monospace;
 $tcesp-proportional-typeface: Verdana, Tahoma, "DejaVu Sans", sans-serif;
 $tcesp-monospaced-typeface: "Courier New", "DejaVu Sans Mono", monospace;
 
@@ -115,9 +116,40 @@ $tcesp-base-font-size: 14px;
 .-tcesp-navigation { }
 
 .-tcesp-menu { // by default, both menus inherit these styles
+  font-family: $tcesp-versal-typeface;
   > li { // use '>' to target only child items
     &.first { }
     &.last { }
+    &.expanded { } } }
+
+.-tcesp-secondary-menu { // by default, both menus inherit these styles
+  @include horizontal-list;
+  font-family: $tcesp-versal-typeface;
+  > li { // use '>' to target only child items
+    background-color: white;
+    width: 120px;
+    position: relative;
+    padding: 0.5em 30px 0.5em 10px;
+    a {
+      @include link-colors(black);
+      text-decoration: none; }
+    &:after {
+      @include box-shadow(3px 0 3px #666);
+      @include skew(40deg, 0);
+      position: absolute;
+      right: 15px;
+      top: 0;
+      z-index: 1;
+      width: 15px;
+      height: 100%;
+      content: "";
+      background-color: white; }
+    &.first { }
+    &.last {
+      padding-right: 0;
+      &:after {
+      right: -15px;
+      width: 30px; } }
     &.expanded { } } }
 
 .-tcesp-submenu { // think expanded menus, not secondary menus

@@ -31,11 +31,11 @@ body { @extend .-tcesp-body; }
 #navigation {
   @extend .-tcesp-navigation; }
 
-.primary-links  {
+ul.primary-links  {
   @extend .-tcesp-menu;
   > li > .links { @extend .-tcesp-submenu; } }
   
-.secondary-links  { @extend .-tcesp-menu; }
+ul.secondary-links  { @extend .-tcesp-secondary-menu; }
 
 #sidebar-left { 
   @extend .-tcesp-sidebar;

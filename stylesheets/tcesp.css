@@ -1,4 +1,4 @@
-/* line 90, ../sass/_tcesp-skin.scss */
+/* line 91, ../sass/_tcesp-skin.scss */
 .-tcesp-body, body {
   background: url('../images/stripes.png?1317247346') repeat, -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #eaeaea));
   background: url('../images/stripes.png?1317247346') repeat, -webkit-linear-gradient(#ffffff, #eaeaea 42em);
@@ -8,9 +8,88 @@
   background: url('../images/stripes.png?1317247346') repeat, linear-gradient(#ffffff, #eaeaea 42em);
 }
 
-/* line 112, ../sass/_tcesp-skin.scss */
+/* line 113, ../sass/_tcesp-skin.scss */
 .-tcesp-container, #container {
   background-color: white;
+}
+
+/* line 118, ../sass/_tcesp-skin.scss */
+.-tcesp-menu, ul.primary-links {
+  font-family: Amaranth, "Courier New", "DejaVu Sans Mono", monospace;
+}
+
+/* line 125, ../sass/_tcesp-skin.scss */
+.-tcesp-secondary-menu, ul.secondary-links {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  *zoom: 1;
+  font-family: Amaranth, "Courier New", "DejaVu Sans Mono", monospace;
+}
+/* line 60, ../../../../../../../.rvm/gems/ruby-1.9.2-p180@compassdev/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+.-tcesp-secondary-menu li, ul.secondary-links li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0px;
+  white-space: nowrap;
+  display: inline;
+  float: left;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+/* line 48, ../../../../../../../.rvm/gems/ruby-1.9.2-p180@compassdev/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+.-tcesp-secondary-menu li:first-child, ul.secondary-links li:first-child, .-tcesp-secondary-menu li.first, ul.secondary-links li.first {
+  padding-left: 0;
+}
+/* line 49, ../../../../../../../.rvm/gems/ruby-1.9.2-p180@compassdev/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+.-tcesp-secondary-menu li:last-child, ul.secondary-links li:last-child {
+  padding-right: 0;
+}
+/* line 50, ../../../../../../../.rvm/gems/ruby-1.9.2-p180@compassdev/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+.-tcesp-secondary-menu li.last, ul.secondary-links li.last {
+  padding-right: 0;
+}
+/* line 128, ../sass/_tcesp-skin.scss */
+.-tcesp-secondary-menu > li, ul.secondary-links > li {
+  background-color: white;
+  width: 120px;
+  position: relative;
+  padding: 0.5em 30px 0.5em 10px;
+}
+/* line 133, ../sass/_tcesp-skin.scss */
+.-tcesp-secondary-menu > li a, ul.secondary-links > li a {
+  color: black;
+  text-decoration: none;
+}
+/* line 136, ../sass/_tcesp-skin.scss */
+.-tcesp-secondary-menu > li:after, ul.secondary-links > li:after {
+  -moz-box-shadow: 3px 0 3px #666666;
+  -webkit-box-shadow: 3px 0 3px #666666;
+  -o-box-shadow: 3px 0 3px #666666;
+  box-shadow: 3px 0 3px #666666;
+  -moz-transform: skew(40deg, 0);
+  -webkit-transform: skew(40deg, 0);
+  -o-transform: skew(40deg, 0);
+  -ms-transform: skew(40deg, 0);
+  transform: skew(40deg, 0);
+  position: absolute;
+  right: 15px;
+  top: 0;
+  z-index: 1;
+  width: 15px;
+  height: 100%;
+  content: "";
+  background-color: white;
+}
+/* line 148, ../sass/_tcesp-skin.scss */
+.-tcesp-secondary-menu > li.last, ul.secondary-links > li.last {
+  padding-right: 0;
+}
+/* line 150, ../sass/_tcesp-skin.scss */
+.-tcesp-secondary-menu > li.last:after, ul.secondary-links > li.last:after {
+  right: -15px;
+  width: 30px;
 }
 
 /* page.tpl.php */
