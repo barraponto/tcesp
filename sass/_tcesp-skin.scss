@@ -161,7 +161,7 @@ $tcesp-base-font-size: 14px;
     background-color: white;
     width: 120px;
     position: relative;
-    padding: 0.5em 30px 0.5em 10px;
+    padding: 0.25em 30px 0.25em 10px;
     a {
       @include link-colors(black);
       text-decoration: none; }
@@ -295,7 +295,7 @@ $tcesp-base-font-size: 14px;
 
 #search-box {
   float: right;
-  padding: 0.75em 0 .25em;
+  padding: 0.5em 0;
   .form-item { margin: 0; }
   label {
     clip: rect(1px, 1px, 1px, 1px);

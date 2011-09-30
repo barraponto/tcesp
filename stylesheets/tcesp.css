@@ -136,7 +136,7 @@
   background-color: white;
   width: 120px;
   position: relative;
-  padding: 0.5em 30px 0.5em 10px;
+  padding: 0.25em 30px 0.25em 10px;
 }
 /* line 165, ../sass/_tcesp-skin.scss */
 .-tcesp-secondary-menu > li a, ul.secondary-links > li a {
@@ -180,7 +180,7 @@
 /* line 296, ../sass/_tcesp-skin.scss */
 #search-box {
   float: right;
-  padding: 0.75em 0 .25em;
+  padding: 0.5em 0;
 }
 /* line 299, ../sass/_tcesp-skin.scss */
 #search-box .form-item {
