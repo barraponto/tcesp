@@ -1,25 +1,30 @@
-/* line 91, ../sass/_tcesp-skin.scss */
+/* line 94, ../sass/_tcesp-skin.scss */
 .-tcesp-body, body {
-  background: url('../images/stripes.png?1317247346') repeat, -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #eaeaea));
-  background: url('../images/stripes.png?1317247346') repeat, -webkit-linear-gradient(#ffffff, #eaeaea 42em);
-  background: url('../images/stripes.png?1317247346') repeat, -moz-linear-gradient(#ffffff, #eaeaea 42em);
-  background: url('../images/stripes.png?1317247346') repeat, -o-linear-gradient(#ffffff, #eaeaea 42em);
-  background: url('../images/stripes.png?1317247346') repeat, -ms-linear-gradient(#ffffff, #eaeaea 42em);
-  background: url('../images/stripes.png?1317247346') repeat, linear-gradient(#ffffff, #eaeaea 42em);
+  background: url('../images/stripes.png?1317247346') repeat, -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f9f9f9), color-stop(100%, #eaeaea));
+  background: url('../images/stripes.png?1317247346') repeat, -webkit-linear-gradient(#f9f9f9, #eaeaea 42em);
+  background: url('../images/stripes.png?1317247346') repeat, -moz-linear-gradient(#f9f9f9, #eaeaea 42em);
+  background: url('../images/stripes.png?1317247346') repeat, -o-linear-gradient(#f9f9f9, #eaeaea 42em);
+  background: url('../images/stripes.png?1317247346') repeat, -ms-linear-gradient(#f9f9f9, #eaeaea 42em);
+  background: url('../images/stripes.png?1317247346') repeat, linear-gradient(#f9f9f9, #eaeaea 42em);
 }
 
-/* line 100, ../sass/_tcesp-skin.scss */
+/* line 99, ../sass/_tcesp-skin.scss */
+.-tcesp-page, #page {
+  padding-top: 2em;
+}
+
+/* line 104, ../sass/_tcesp-skin.scss */
 .-tcesp-logo-title, #logo-title {
   background-image: url('../images/banner.png?1317409968');
 }
 
-/* line 103, ../sass/_tcesp-skin.scss */
+/* line 107, ../sass/_tcesp-skin.scss */
 .-tcesp-logo, #logo {
   display: block;
   padding: 20px;
 }
 
-/* line 108, ../sass/_tcesp-skin.scss */
+/* line 112, ../sass/_tcesp-skin.scss */
 .-tcesp-name-and-slogan, #name-and-slogan {
   *zoom: 1;
 }
@@ -30,7 +35,7 @@
   clear: both;
 }
 
-/* line 111, ../sass/_tcesp-skin.scss */
+/* line 115, ../sass/_tcesp-skin.scss */
 .-tcesp-site-name, #site-name {
   float: left;
   margin: 0;
@@ -38,34 +43,34 @@
   line-height: 1.5em;
   text-indent: 1em;
 }
-/* line 117, ../sass/_tcesp-skin.scss */
+/* line 121, ../sass/_tcesp-skin.scss */
 .-tcesp-site-name a, #site-name a {
   color: #5a5a5a;
-  font-family: Amaranth, "Courier New", "DejaVu Sans Mono", monospace;
+  font-family: Amaranth, Verdana, Tahoma, "DejaVu Sans", sans-serif;
   text-decoration: none;
 }
 
-/* line 126, ../sass/_tcesp-skin.scss */
+/* line 130, ../sass/_tcesp-skin.scss */
 .-tcesp-container, #container {
   background-color: white;
 }
 
-/* line 131, ../sass/_tcesp-skin.scss */
+/* line 135, ../sass/_tcesp-skin.scss */
 .-tcesp-menu, ul.primary-links {
-  font-family: Amaranth, "Courier New", "DejaVu Sans Mono", monospace;
+  font-family: Amaranth, Verdana, Tahoma, "DejaVu Sans", sans-serif;
 }
 
-/* line 138, ../sass/_tcesp-skin.scss */
+/* line 142, ../sass/_tcesp-skin.scss */
 .-tcesp-secondary-menu-wrapper, #secondary {
   position: relative;
   overflow: visible;
 }
-/* line 141, ../sass/_tcesp-skin.scss */
+/* line 145, ../sass/_tcesp-skin.scss */
 .-tcesp-secondary-menu-wrapper:before, #secondary:before {
-  -moz-box-shadow: 0 0 3px #999999;
-  -webkit-box-shadow: 0 0 3px #999999;
-  -o-box-shadow: 0 0 3px #999999;
-  box-shadow: 0 0 3px #999999;
+  -moz-box-shadow: 0 0 3px #cccccc;
+  -webkit-box-shadow: 0 0 3px #cccccc;
+  -o-box-shadow: 0 0 3px #cccccc;
+  box-shadow: 0 0 3px #cccccc;
   position: absolute;
   top: 0;
   left: 0;
@@ -74,39 +79,39 @@
   height: 3px;
   content: "";
 }
-/* line 151, ../sass/_tcesp-skin.scss */
+/* line 155, ../sass/_tcesp-skin.scss */
 .-tcesp-secondary-menu-wrapper.items-1:before, .items-1#secondary:before {
   width: 130px;
 }
-/* line 151, ../sass/_tcesp-skin.scss */
+/* line 155, ../sass/_tcesp-skin.scss */
 .-tcesp-secondary-menu-wrapper.items-2:before, .items-2#secondary:before {
   width: 290px;
 }
-/* line 151, ../sass/_tcesp-skin.scss */
+/* line 155, ../sass/_tcesp-skin.scss */
 .-tcesp-secondary-menu-wrapper.items-3:before, .items-3#secondary:before {
   width: 450px;
 }
-/* line 151, ../sass/_tcesp-skin.scss */
+/* line 155, ../sass/_tcesp-skin.scss */
 .-tcesp-secondary-menu-wrapper.items-4:before, .items-4#secondary:before {
   width: 610px;
 }
-/* line 151, ../sass/_tcesp-skin.scss */
+/* line 155, ../sass/_tcesp-skin.scss */
 .-tcesp-secondary-menu-wrapper.items-5:before, .items-5#secondary:before {
   width: 770px;
 }
-/* line 151, ../sass/_tcesp-skin.scss */
+/* line 155, ../sass/_tcesp-skin.scss */
 .-tcesp-secondary-menu-wrapper.items-6:before, .items-6#secondary:before {
   width: 930px;
 }
 
-/* line 157, ../sass/_tcesp-skin.scss */
+/* line 161, ../sass/_tcesp-skin.scss */
 .-tcesp-secondary-menu, ul.secondary-links {
   margin: 0;
   padding: 0;
   border: 0;
   overflow: hidden;
   *zoom: 1;
-  font-family: Amaranth, "Courier New", "DejaVu Sans Mono", monospace;
+  font-family: Amaranth, Verdana, Tahoma, "DejaVu Sans", sans-serif;
 }
 /* line 60, ../../../../../../../.rvm/gems/ruby-1.9.2-p180@compassdev/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
 .-tcesp-secondary-menu li, ul.secondary-links li {
@@ -131,29 +136,29 @@
 .-tcesp-secondary-menu li.last, ul.secondary-links li.last {
   padding-right: 0;
 }
-/* line 160, ../sass/_tcesp-skin.scss */
+/* line 164, ../sass/_tcesp-skin.scss */
 .-tcesp-secondary-menu > li, ul.secondary-links > li {
   background-color: white;
   width: 120px;
   position: relative;
   padding: 0.25em 30px 0.25em 10px;
 }
-/* line 165, ../sass/_tcesp-skin.scss */
+/* line 169, ../sass/_tcesp-skin.scss */
 .-tcesp-secondary-menu > li a, ul.secondary-links > li a {
   color: black;
   text-decoration: none;
 }
-/* line 168, ../sass/_tcesp-skin.scss */
+/* line 172, ../sass/_tcesp-skin.scss */
 .-tcesp-secondary-menu > li:after, ul.secondary-links > li:after {
   -moz-box-shadow: 3px 0 3px #cccccc;
   -webkit-box-shadow: 3px 0 3px #cccccc;
   -o-box-shadow: 3px 0 3px #cccccc;
   box-shadow: 3px 0 3px #cccccc;
-  -moz-transform: skew(40deg, 0);
-  -webkit-transform: skew(40deg, 0);
-  -o-transform: skew(40deg, 0);
-  -ms-transform: skew(40deg, 0);
-  transform: skew(40deg, 0);
+  -moz-transform: skew(45deg, 0);
+  -webkit-transform: skew(45deg, 0);
+  -o-transform: skew(45deg, 0);
+  -ms-transform: skew(45deg, 0);
+  transform: skew(45deg, 0);
   position: absolute;
   right: 15px;
   top: 0;
@@ -163,41 +168,47 @@
   content: "";
   background-color: white;
 }
-/* line 179, ../sass/_tcesp-skin.scss */
+/* line 183, ../sass/_tcesp-skin.scss */
 .-tcesp-secondary-menu > li.first, ul.secondary-links > li.first {
   padding-left: 0.5em;
 }
-/* line 181, ../sass/_tcesp-skin.scss */
+/* line 185, ../sass/_tcesp-skin.scss */
 .-tcesp-secondary-menu > li.last, ul.secondary-links > li.last {
   padding-right: 0;
 }
-/* line 183, ../sass/_tcesp-skin.scss */
+/* line 187, ../sass/_tcesp-skin.scss */
 .-tcesp-secondary-menu > li.last:after, ul.secondary-links > li.last:after {
   right: -15px;
+  z-index: -1;
   width: 30px;
 }
 
-/* line 296, ../sass/_tcesp-skin.scss */
+/* line 244, ../sass/_tcesp-skin.scss */
+.-tcesp-content-area, #content-content {
+  padding: 1em;
+}
+
+/* line 302, ../sass/_tcesp-skin.scss */
 #search-box {
   float: right;
   padding: 0.5em 0;
 }
-/* line 299, ../sass/_tcesp-skin.scss */
+/* line 305, ../sass/_tcesp-skin.scss */
 #search-box .form-item {
   margin: 0;
 }
-/* line 300, ../sass/_tcesp-skin.scss */
+/* line 306, ../sass/_tcesp-skin.scss */
 #search-box label {
   clip: rect(1px, 1px, 1px, 1px);
   position: absolute;
 }
-/* line 303, ../sass/_tcesp-skin.scss */
+/* line 309, ../sass/_tcesp-skin.scss */
 #search-box .form-text {
   background-color: #BFDBE5;
   padding: 0.25em;
   border: none;
 }
-/* line 307, ../sass/_tcesp-skin.scss */
+/* line 313, ../sass/_tcesp-skin.scss */
 #search-box .form-submit {
   text-indent: -119988px;
   overflow: hidden;

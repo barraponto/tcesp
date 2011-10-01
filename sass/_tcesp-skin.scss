@@ -12,12 +12,15 @@ $tcesp-second-sidebar-width: 200px;
 $tcesp-content-position: "middle";
 
 // These variables control the typefaces as defined in html-reset.css
-$tcesp-versal-typeface: Amaranth, "Courier New", "DejaVu Sans Mono", monospace;
+$tcesp-versal-typeface: Amaranth, Verdana, Tahoma, "DejaVu Sans", sans-serif; 
 $tcesp-proportional-typeface: Verdana, Tahoma, "DejaVu Sans", sans-serif;
 $tcesp-monospaced-typeface: "Courier New", "DejaVu Sans Mono", monospace;
 
 // These variables control the font sizes as defined in html-reset.css
 $tcesp-base-font-size: 14px;
+
+// Set the palette for TCESP
+$tcesp-shadow: #CCC;
 
 //HTML Elements
 .-tcesp-h2 { } 
@@ -89,11 +92,12 @@ $tcesp-base-font-size: 14px;
 
 // Page Components
 .-tcesp-body {
-  @include background-with-css2-fallback(image-url('stripes.png') repeat, linear-gradient(white, #eaeaea 42em)); }
+  @include background-with-css2-fallback(image-url('stripes.png') repeat, linear-gradient(#f9f9f9, #eaeaea 42em)); }
 
 .-tcesp-skip-link { }
 
-.-tcesp-page { }
+.-tcesp-page {
+  padding-top: 2em; }
 
 .-tcesp-header { }
 
@@ -139,7 +143,7 @@ $tcesp-base-font-size: 14px;
   position: relative;
   overflow: visible;
   &:before {
-    @include box-shadow(0 0 3px #999);
+    @include box-shadow(0 0 3px $tcesp-shadow);
     position: absolute;
     top: 0;
     left: 0;
@@ -166,8 +170,8 @@ $tcesp-base-font-size: 14px;
       @include link-colors(black);
       text-decoration: none; }
     &:after {
-      @include box-shadow(3px 0 3px #ccc);
-      @include skew(40deg, 0);
+      @include box-shadow(3px 0 3px $tcesp-shadow);
+      @include skew(45deg, 0);
       position: absolute;
       right: 15px;
       top: 0;
@@ -182,6 +186,7 @@ $tcesp-base-font-size: 14px;
       padding-right: 0;
       &:after {
       right: -15px;
+      z-index: -1;
       width: 30px; } }
     &.expanded { } } }
 
@@ -236,7 +241,8 @@ $tcesp-base-font-size: 14px;
   
 .-tcesp-title { } 
 
-.-tcesp-content-area { }
+.-tcesp-content-area {
+  padding: 1em; }
 
 .-tcesp-footer { }
 
