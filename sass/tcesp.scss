@@ -89,9 +89,15 @@ ul.secondary-links  { @extend .-tcesp-secondary-menu; }
   > h2 { @extend .-tcesp-block-title; }
   .content { @extend .-tcesp-block-content; } 
 
-  #header-region & { @extend .-tcesp-header-block; }
-  #header-region & > h2 { @extend .-tcesp-header-block-title; }
-  #header-region & > .content { @extend .-tcesp-header-block-content; }
+  #header-region & { 
+    @extend .-tcesp-header-block;
+    > h2 { @extend .-tcesp-header-block-title; }
+    .content { @extend .-tcesp-header-block-content; } }
+
+  #content-top & { 
+    @extend .-tcesp-content-top-block; 
+    > h2 { @extend .-tcesp-content-top-block-title; }
+    .content { @extend .-tcesp-content-top-block-content; } }
 
   // these are Kit regions blocks, set as examples for any region specific block styling
   #content-content & { 

@@ -142,28 +142,30 @@
       <div id="main" class="column"><div id="main-squeeze">
         <?php if (!empty($mission)): ?><div id="mission"><?php print $mission; ?></div><?php endif; ?>
 
+        <?php if($content_top): ?>
+          <div id="content-top">
+            <?php print $content_top; ?>
+          </div>
+        <?php endif; ?>
+
         <div id="content">
           <?php if (!empty($title)): ?><h1 class="title" id="page-title"><?php print $title; ?></h1><?php endif; ?>
           <?php if (!empty($tabs)): ?><div class="tabs"><?php print $tabs; ?></div><?php endif; ?>
           <?php if (!empty($messages)): print $messages; endif; ?>
           <?php if (!empty($help)): print $help; endif; ?>
           <div id="content-content" class="clear-block">
-            <?php if($content_top): ?>
-              <div id="content-top">
-                <?php print $content_top; ?>
-              </div>
-            <?php endif; ?>
-
+ 
             <?php print $content; ?>
 
-            <?php if($content_bottom): ?>
-              <div id="content-bottom">
-                <?php print $content_bottom; ?>
-              </div>
-            <?php endif; ?>
           </div> <!-- /content-content -->
           <?php print $feed_icons; ?>
         </div> <!-- /content -->
+
+          <?php if($content_bottom): ?>
+            <div id="content-bottom">
+              <?php print $content_bottom; ?>
+            </div>
+          <?php endif; ?>
 
       </div></div> <!-- /main-squeeze /main -->
 

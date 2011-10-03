@@ -298,6 +298,15 @@ $tcesp-shadow: #CCC;
 
 .-tcesp-header-block-content { @extend .-tcesp-block-content; }
 
+.-tcesp-content-top-block {
+  border-top: 1px solid #FADCDC;
+  border-bottom: 1px solid #FADCDC;
+}
+
+.-tcesp-content-top-block-title { }
+
+.-tcesp-content-top-block-content { @extend .-tcesp-block-content; }
+
 .-tcesp-content-block { }
 
 .-tcesp-content-block-title { }
@@ -364,6 +373,7 @@ $tcesp-shadow: #CCC;
     clip: rect(1px, 1px, 1px, 1px);
     position: absolute; }
   .form-text {
+    font-family: $tcesp-versal-typeface;
     background-color: #BFDBE5;
     width: 100%;
     padding: 0.25em;
