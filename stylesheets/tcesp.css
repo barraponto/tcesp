@@ -1,11 +1,11 @@
 /* line 27, ../sass/_tcesp-skin.scss */
-.-tcesp-basic-title, .-tcesp-site-name, #site-name, .-tcesp-block-title, .block > h2 {
+.-tcesp-basic-title, .-tcesp-site-name, #site-name, .-tcesp-title, #page-title, .-tcesp-block-title, .block > h2 {
   font: 1.5em Amaranth, Verdana, Tahoma, "DejaVu Sans", sans-serif;
   margin: 0;
   color: black;
 }
 /* line 31, ../sass/_tcesp-skin.scss */
-.-tcesp-basic-title a, .-tcesp-site-name a, #site-name a, .-tcesp-block-title a, .block > h2 a {
+.-tcesp-basic-title a, .-tcesp-site-name a, #site-name a, .-tcesp-title a, #page-title a, .-tcesp-block-title a, .block > h2 a {
   color: black;
   text-decoration: none;
 }
@@ -200,25 +200,25 @@
 
 /* line 218, ../sass/_tcesp-skin.scss */
 .-tcesp-content, #content {
-  padding: 1em;
+  margin: 0.5em 1em;
 }
 
-/* line 262, ../sass/_tcesp-skin.scss */
+/* line 264, ../sass/_tcesp-skin.scss */
 .-tcesp-block, .block {
-  padding: 0.5em 1em;
+  margin: 0.5em 1em;
 }
 
-/* line 265, ../sass/_tcesp-skin.scss */
+/* line 267, ../sass/_tcesp-skin.scss */
 .-tcesp-block-title, .block > h2 {
   margin-bottom: 0.5em;
 }
 
-/* line 274, ../sass/_tcesp-skin.scss */
+/* line 276, ../sass/_tcesp-skin.scss */
 .-tcesp-header-block-title, #header-region .block > h2 {
   text-align: center;
   position: relative;
 }
-/* line 277, ../sass/_tcesp-skin.scss */
+/* line 279, ../sass/_tcesp-skin.scss */
 .-tcesp-header-block-title span, #header-region .block > h2 span {
   background: none repeat scroll 0 0 white;
   display: inline-block;
@@ -226,7 +226,7 @@
   position: relative;
   z-index: 1;
 }
-/* line 284, ../sass/_tcesp-skin.scss */
+/* line 286, ../sass/_tcesp-skin.scss */
 .-tcesp-header-block-title:after, #header-region .block > h2:after, .-tcesp-header-block-title:before, #header-region .block > h2:before {
   height: 1px;
   width: 25%;
@@ -234,7 +234,7 @@
   position: absolute;
   top: 50%;
 }
-/* line 290, ../sass/_tcesp-skin.scss */
+/* line 292, ../sass/_tcesp-skin.scss */
 .-tcesp-header-block-title:before, #header-region .block > h2:before {
   left: 15%;
   background-image: -webkit-gradient(linear, 100% 50%, 0% 50%, color-stop(50%, #fadcdc), color-stop(100%, rgba(250, 220, 220, 0)));
@@ -244,7 +244,7 @@
   background-image: -ms-linear-gradient(right, #fadcdc 50%, rgba(250, 220, 220, 0));
   background-image: linear-gradient(right, #fadcdc 50%, rgba(250, 220, 220, 0));
 }
-/* line 293, ../sass/_tcesp-skin.scss */
+/* line 295, ../sass/_tcesp-skin.scss */
 .-tcesp-header-block-title:after, #header-region .block > h2:after {
   right: 15%;
   background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(50%, #fadcdc), color-stop(100%, rgba(250, 220, 220, 0)));
@@ -255,30 +255,30 @@
   background-image: linear-gradient(left, #fadcdc 50%, rgba(250, 220, 220, 0));
 }
 
-/* line 354, ../sass/_tcesp-skin.scss */
+/* line 356, ../sass/_tcesp-skin.scss */
 #search-box {
   float: right;
   padding: 0.9em 0;
 }
-/* line 357, ../sass/_tcesp-skin.scss */
+/* line 359, ../sass/_tcesp-skin.scss */
 #search-box .form-item {
   margin: 0;
   width: 240px;
   display: inline-block;
 }
-/* line 361, ../sass/_tcesp-skin.scss */
+/* line 363, ../sass/_tcesp-skin.scss */
 #search-box label {
   clip: rect(1px, 1px, 1px, 1px);
   position: absolute;
 }
-/* line 364, ../sass/_tcesp-skin.scss */
+/* line 366, ../sass/_tcesp-skin.scss */
 #search-box .form-text {
   background-color: #BFDBE5;
   width: 100%;
   padding: 0.25em;
   border: none;
 }
-/* line 369, ../sass/_tcesp-skin.scss */
+/* line 371, ../sass/_tcesp-skin.scss */
 #search-box .form-submit {
   text-indent: -119988px;
   overflow: hidden;

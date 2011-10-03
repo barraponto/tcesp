@@ -215,7 +215,7 @@ $tcesp-shadow: #CCC;
 .-tcesp-breadcrumb {
   a { } }
 
-.-tcesp-content { padding: 1em; }
+.-tcesp-content { margin: 0.5em 1em; }
 
 .-tcesp-tabs {
   .primary { }
@@ -249,7 +249,9 @@ $tcesp-shadow: #CCC;
 .-tcesp-feed-icons {
   .feed-icon { } }
   
-.-tcesp-title { } 
+.-tcesp-title {
+  @extend .-tcesp-basic-title;
+} 
 
 .-tcesp-content-area { }
 
@@ -260,7 +262,7 @@ $tcesp-shadow: #CCC;
 // Block Components
 // These are defaults for every block in your theme
 .-tcesp-block {
-  padding: 0.5em 1em; }
+  margin: 0.5em 1em; }
 
 .-tcesp-block-title {
   @extend .-tcesp-basic-title;
