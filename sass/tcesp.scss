@@ -47,7 +47,8 @@ ul.secondary-links  { @extend .-tcesp-secondary-menu; }
 #main { 
   @extend .-tcesp-main;
   #sidebar-left + & { 
-    margin-left: $drupal-first-sidebar-width; } }
+    width: $drupal-width - $drupal-first-sidebar-width;
+    float: left; } }
 
 #mission { @extend .-tcesp-mission; }
 
@@ -79,20 +80,30 @@ ul.secondary-links  { @extend .-tcesp-secondary-menu; }
   //edit it to wrap the $footer_message variable
   //@extend .-tcesp-footer-message;
 
- }
+}
 
 /* block.tpl.php */
 .block {
-  // these are Kit regions blocks, set as examples for any region specific block styling
-  #content-content & { @extend .-tcesp-content-block; }
-  #sidebar-left & { @extend .-tcesp-sidebar-block; }
-  #sidebar-right & { @extend .-tcesp-sidebar-block; }
-
-  // these selectors will affect all of your blocks, beware!
-  // try scoping the selectors by region, as shown above
+  // try scoping the selectors by region
   @extend .-tcesp-block; 
   > h2 { @extend .-tcesp-block-title; }
-  .content { @extend .-tcesp-block-content; } }
+  .content { @extend .-tcesp-block-content; } 
+
+  #header-region & { @extend .-tcesp-header-block; }
+  #header-region & > h2 { @extend .-tcesp-header-block-title; }
+  #header-region & > .content { @extend .-tcesp-header-block-content; }
+
+  // these are Kit regions blocks, set as examples for any region specific block styling
+  #content-content & { 
+    @extend .-tcesp-content-block; 
+    > h2 { @extend .-tcesp-content-block-title; }
+    .content { @extend .-tcesp-content-block-content; } }
+
+  #sidebar-left &,
+  #sidebar-right & { 
+    @extend .-tcesp-sidebar-block;
+    > h2 { @extend .-tcesp-sidebar-block-title; }
+    .content { @extend .-tcesp-sidebar-block-content; } } }
 
 /* node.tpl.php */
 .node {

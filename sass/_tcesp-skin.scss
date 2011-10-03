@@ -22,6 +22,16 @@ $tcesp-base-font-size: 14px;
 // Set the palette for TCESP
 $tcesp-shadow: #CCC;
 
+// Some skin base styles
+
+.-tcesp-basic-title {
+  font: 1.5em $tcesp-versal-typeface;
+  margin: 0;
+  color: black;
+  a { 
+    @include link-colors(black);
+    text-decoration: none; } }
+
 //HTML Elements
 .-tcesp-h2 { } 
 
@@ -99,7 +109,8 @@ $tcesp-shadow: #CCC;
 .-tcesp-page {
   padding-top: 2em; }
 
-.-tcesp-header { }
+.-tcesp-header {
+  background-color: white; }
 
 .-tcesp-logo-title { // usually a #logo-title wrapper div (YMMV)
   background-image: image-url('banner.png'); } 
@@ -113,16 +124,14 @@ $tcesp-shadow: #CCC;
   @include pie-clearfix; } // usually a #name-and-slogan wrapper div (YMMV) 
 
 .-tcesp-site-name {
+  @extend .-tcesp-basic-title;
   float: left;
-  margin: 0;
   font-size: 1.75em;
-  font-weight: normal;
   line-height: 1.8em;
   text-indent: 1em; 
   a {
     @include link-colors(#5a5a5a);
-    font-family: $tcesp-versal-typeface;
-    text-decoration: none; } }
+    font-family: $tcesp-versal-typeface; } }
 
 .-tcesp-site-slogan { }
 
@@ -249,12 +258,55 @@ $tcesp-shadow: #CCC;
 .-tcesp-footer-message { }
 
 // Block Components
-// Make copies of these components for a diversity of block styles
-.-tcesp-block { }
+// These are defaults for every block in your theme
+.-tcesp-block {
+  padding: 0.5em 1em; }
 
-.-tcesp-block-title { }
+.-tcesp-block-title {
+  @extend .-tcesp-basic-title;
+  margin-bottom: 0.5em; }
 
 .-tcesp-block-content { @extend .-tcesp-block-content; }
+
+// Make copies of the components for a diversity of block styles, like these
+.-tcesp-header-block { }
+
+.-tcesp-header-block-title {
+  text-align: center;
+  position: relative;
+  span {
+    background: none repeat scroll 0 0 white;
+    display: inline-block;
+    padding: 0 0.5em;
+    position: relative;
+    z-index: 1; }
+  &:after,
+  &:before { 
+    height:1px;
+    width: 25%;
+    content:"";
+    position: absolute;
+    top: 50%; }
+  &:before {
+    left: 15%;
+    @include background-image(linear-gradient(right, rgba(250,220,220,1) 50%, rgba(250,220,220,0))); }
+  &:after { 
+    right: 15%;
+    @include background-image(linear-gradient(left, rgba(250,220,220,1) 50%, rgba(250,220,220,0))); } }
+
+.-tcesp-header-block-content { @extend .-tcesp-block-content; }
+
+.-tcesp-content-block { }
+
+.-tcesp-content-block-title { }
+
+.-tcesp-content-block-content { @extend .-tcesp-block-content; }
+
+.-tcesp-sidebar-block { }
+
+.-tcesp-sidebar-block-title { }
+
+.-tcesp-sidebar-block-content { @extend .-tcesp-block-content; }
 
 // Node Components
 // Make copies of these components for a diversity of node styles

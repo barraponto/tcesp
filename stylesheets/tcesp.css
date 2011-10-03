@@ -1,4 +1,16 @@
-/* line 94, ../sass/_tcesp-skin.scss */
+/* line 27, ../sass/_tcesp-skin.scss */
+.-tcesp-basic-title, .-tcesp-site-name, #site-name, .-tcesp-block-title, .block > h2 {
+  font: 1.5em Amaranth, Verdana, Tahoma, "DejaVu Sans", sans-serif;
+  margin: 0;
+  color: black;
+}
+/* line 31, ../sass/_tcesp-skin.scss */
+.-tcesp-basic-title a, .-tcesp-site-name a, #site-name a, .-tcesp-block-title a, .block > h2 a {
+  color: black;
+  text-decoration: none;
+}
+
+/* line 104, ../sass/_tcesp-skin.scss */
 .-tcesp-body, body {
   background: url('../images/stripes.png?1317247346') repeat, -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f9f9f9), color-stop(100%, #eaeaea));
   background: url('../images/stripes.png?1317247346') repeat, -webkit-linear-gradient(#f9f9f9, #eaeaea 42em);
@@ -8,23 +20,28 @@
   background: url('../images/stripes.png?1317247346') repeat, linear-gradient(#f9f9f9, #eaeaea 42em);
 }
 
-/* line 99, ../sass/_tcesp-skin.scss */
+/* line 109, ../sass/_tcesp-skin.scss */
 .-tcesp-page, #page {
   padding-top: 2em;
 }
 
-/* line 104, ../sass/_tcesp-skin.scss */
+/* line 112, ../sass/_tcesp-skin.scss */
+.-tcesp-header, #header {
+  background-color: white;
+}
+
+/* line 115, ../sass/_tcesp-skin.scss */
 .-tcesp-logo-title, #logo-title {
   background-image: url('../images/banner.png?1317409968');
 }
 
-/* line 107, ../sass/_tcesp-skin.scss */
+/* line 118, ../sass/_tcesp-skin.scss */
 .-tcesp-logo, #logo {
   display: block;
   padding: 20px;
 }
 
-/* line 112, ../sass/_tcesp-skin.scss */
+/* line 123, ../sass/_tcesp-skin.scss */
 .-tcesp-name-and-slogan, #name-and-slogan {
   *zoom: 1;
 }
@@ -35,38 +52,35 @@
   clear: both;
 }
 
-/* line 115, ../sass/_tcesp-skin.scss */
+/* line 126, ../sass/_tcesp-skin.scss */
 .-tcesp-site-name, #site-name {
   float: left;
-  margin: 0;
   font-size: 1.75em;
-  font-weight: normal;
   line-height: 1.8em;
   text-indent: 1em;
 }
-/* line 122, ../sass/_tcesp-skin.scss */
+/* line 132, ../sass/_tcesp-skin.scss */
 .-tcesp-site-name a, #site-name a {
   color: #5a5a5a;
   font-family: Amaranth, Verdana, Tahoma, "DejaVu Sans", sans-serif;
-  text-decoration: none;
 }
 
-/* line 131, ../sass/_tcesp-skin.scss */
+/* line 140, ../sass/_tcesp-skin.scss */
 .-tcesp-container, #container {
   background-color: white;
 }
 
-/* line 136, ../sass/_tcesp-skin.scss */
+/* line 145, ../sass/_tcesp-skin.scss */
 .-tcesp-menu, ul.primary-links {
   font-family: Amaranth, Verdana, Tahoma, "DejaVu Sans", sans-serif;
 }
 
-/* line 143, ../sass/_tcesp-skin.scss */
+/* line 152, ../sass/_tcesp-skin.scss */
 .-tcesp-secondary-menu-wrapper, #secondary {
   position: relative;
   overflow: visible;
 }
-/* line 146, ../sass/_tcesp-skin.scss */
+/* line 155, ../sass/_tcesp-skin.scss */
 .-tcesp-secondary-menu-wrapper:before, #secondary:before {
   -moz-box-shadow: 0 0 3px #cccccc;
   -webkit-box-shadow: 0 0 3px #cccccc;
@@ -80,32 +94,32 @@
   height: 3px;
   content: "";
 }
-/* line 156, ../sass/_tcesp-skin.scss */
+/* line 165, ../sass/_tcesp-skin.scss */
 .-tcesp-secondary-menu-wrapper.items-1:before, .items-1#secondary:before {
   width: 130px;
 }
-/* line 156, ../sass/_tcesp-skin.scss */
+/* line 165, ../sass/_tcesp-skin.scss */
 .-tcesp-secondary-menu-wrapper.items-2:before, .items-2#secondary:before {
   width: 290px;
 }
-/* line 156, ../sass/_tcesp-skin.scss */
+/* line 165, ../sass/_tcesp-skin.scss */
 .-tcesp-secondary-menu-wrapper.items-3:before, .items-3#secondary:before {
   width: 450px;
 }
-/* line 156, ../sass/_tcesp-skin.scss */
+/* line 165, ../sass/_tcesp-skin.scss */
 .-tcesp-secondary-menu-wrapper.items-4:before, .items-4#secondary:before {
   width: 610px;
 }
-/* line 156, ../sass/_tcesp-skin.scss */
+/* line 165, ../sass/_tcesp-skin.scss */
 .-tcesp-secondary-menu-wrapper.items-5:before, .items-5#secondary:before {
   width: 770px;
 }
-/* line 156, ../sass/_tcesp-skin.scss */
+/* line 165, ../sass/_tcesp-skin.scss */
 .-tcesp-secondary-menu-wrapper.items-6:before, .items-6#secondary:before {
   width: 930px;
 }
 
-/* line 162, ../sass/_tcesp-skin.scss */
+/* line 171, ../sass/_tcesp-skin.scss */
 .-tcesp-secondary-menu, ul.secondary-links {
   margin: 0;
   padding: 0;
@@ -137,19 +151,19 @@
 .-tcesp-secondary-menu li.last, ul.secondary-links li.last {
   padding-right: 0;
 }
-/* line 165, ../sass/_tcesp-skin.scss */
+/* line 174, ../sass/_tcesp-skin.scss */
 .-tcesp-secondary-menu > li, ul.secondary-links > li {
   background-color: white;
   width: 120px;
   position: relative;
   padding: 0.25em 30px 0.25em 10px;
 }
-/* line 170, ../sass/_tcesp-skin.scss */
+/* line 179, ../sass/_tcesp-skin.scss */
 .-tcesp-secondary-menu > li a, ul.secondary-links > li a {
   color: black;
   text-decoration: none;
 }
-/* line 173, ../sass/_tcesp-skin.scss */
+/* line 182, ../sass/_tcesp-skin.scss */
 .-tcesp-secondary-menu > li:after, ul.secondary-links > li:after {
   -moz-box-shadow: 3px 0 3px #cccccc;
   -webkit-box-shadow: 3px 0 3px #cccccc;
@@ -169,50 +183,102 @@
   content: "";
   background-color: white;
 }
-/* line 184, ../sass/_tcesp-skin.scss */
+/* line 193, ../sass/_tcesp-skin.scss */
 .-tcesp-secondary-menu > li.first, ul.secondary-links > li.first {
   padding-left: 0.5em;
 }
-/* line 186, ../sass/_tcesp-skin.scss */
+/* line 195, ../sass/_tcesp-skin.scss */
 .-tcesp-secondary-menu > li.last, ul.secondary-links > li.last {
   padding-right: 0;
 }
-/* line 188, ../sass/_tcesp-skin.scss */
+/* line 197, ../sass/_tcesp-skin.scss */
 .-tcesp-secondary-menu > li.last:after, ul.secondary-links > li.last:after {
   right: -15px;
   z-index: -1;
   width: 30px;
 }
 
-/* line 209, ../sass/_tcesp-skin.scss */
+/* line 218, ../sass/_tcesp-skin.scss */
 .-tcesp-content, #content {
   padding: 1em;
 }
 
-/* line 302, ../sass/_tcesp-skin.scss */
+/* line 262, ../sass/_tcesp-skin.scss */
+.-tcesp-block, .block {
+  padding: 0.5em 1em;
+}
+
+/* line 265, ../sass/_tcesp-skin.scss */
+.-tcesp-block-title, .block > h2 {
+  margin-bottom: 0.5em;
+}
+
+/* line 274, ../sass/_tcesp-skin.scss */
+.-tcesp-header-block-title, #header-region .block > h2 {
+  text-align: center;
+  position: relative;
+}
+/* line 277, ../sass/_tcesp-skin.scss */
+.-tcesp-header-block-title span, #header-region .block > h2 span {
+  background: none repeat scroll 0 0 white;
+  display: inline-block;
+  padding: 0 0.5em;
+  position: relative;
+  z-index: 1;
+}
+/* line 284, ../sass/_tcesp-skin.scss */
+.-tcesp-header-block-title:after, #header-region .block > h2:after, .-tcesp-header-block-title:before, #header-region .block > h2:before {
+  height: 1px;
+  width: 25%;
+  content: "";
+  position: absolute;
+  top: 50%;
+}
+/* line 290, ../sass/_tcesp-skin.scss */
+.-tcesp-header-block-title:before, #header-region .block > h2:before {
+  left: 15%;
+  background-image: -webkit-gradient(linear, 100% 50%, 0% 50%, color-stop(50%, #fadcdc), color-stop(100%, rgba(250, 220, 220, 0)));
+  background-image: -webkit-linear-gradient(right, #fadcdc 50%, rgba(250, 220, 220, 0));
+  background-image: -moz-linear-gradient(right, #fadcdc 50%, rgba(250, 220, 220, 0));
+  background-image: -o-linear-gradient(right, #fadcdc 50%, rgba(250, 220, 220, 0));
+  background-image: -ms-linear-gradient(right, #fadcdc 50%, rgba(250, 220, 220, 0));
+  background-image: linear-gradient(right, #fadcdc 50%, rgba(250, 220, 220, 0));
+}
+/* line 293, ../sass/_tcesp-skin.scss */
+.-tcesp-header-block-title:after, #header-region .block > h2:after {
+  right: 15%;
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(50%, #fadcdc), color-stop(100%, rgba(250, 220, 220, 0)));
+  background-image: -webkit-linear-gradient(left, #fadcdc 50%, rgba(250, 220, 220, 0));
+  background-image: -moz-linear-gradient(left, #fadcdc 50%, rgba(250, 220, 220, 0));
+  background-image: -o-linear-gradient(left, #fadcdc 50%, rgba(250, 220, 220, 0));
+  background-image: -ms-linear-gradient(left, #fadcdc 50%, rgba(250, 220, 220, 0));
+  background-image: linear-gradient(left, #fadcdc 50%, rgba(250, 220, 220, 0));
+}
+
+/* line 354, ../sass/_tcesp-skin.scss */
 #search-box {
   float: right;
   padding: 0.9em 0;
 }
-/* line 305, ../sass/_tcesp-skin.scss */
+/* line 357, ../sass/_tcesp-skin.scss */
 #search-box .form-item {
   margin: 0;
   width: 240px;
   display: inline-block;
 }
-/* line 309, ../sass/_tcesp-skin.scss */
+/* line 361, ../sass/_tcesp-skin.scss */
 #search-box label {
   clip: rect(1px, 1px, 1px, 1px);
   position: absolute;
 }
-/* line 312, ../sass/_tcesp-skin.scss */
+/* line 364, ../sass/_tcesp-skin.scss */
 #search-box .form-text {
   background-color: #BFDBE5;
   width: 100%;
   padding: 0.25em;
   border: none;
 }
-/* line 317, ../sass/_tcesp-skin.scss */
+/* line 369, ../sass/_tcesp-skin.scss */
 #search-box .form-submit {
   text-indent: -119988px;
   overflow: hidden;
@@ -243,7 +309,8 @@
 
 /* line 49, ../sass/tcesp.scss */
 #sidebar-left + #main {
-  margin-left: 200px;
+  width: 760px;
+  float: left;
 }
 
 /* block.tpl.php */
