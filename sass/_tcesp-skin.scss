@@ -116,7 +116,8 @@ $tcesp-shadow: #CCC;
   float: left;
   margin: 0;
   font-size: 1.75em;
-  line-height: 1.5em;
+  font-weight: normal;
+  line-height: 1.8em;
   text-indent: 1em; 
   a {
     @include link-colors(#5a5a5a);
@@ -205,7 +206,7 @@ $tcesp-shadow: #CCC;
 .-tcesp-breadcrumb {
   a { } }
 
-.-tcesp-content { }
+.-tcesp-content { padding: 1em; }
 
 .-tcesp-tabs {
   .primary { }
@@ -241,8 +242,7 @@ $tcesp-shadow: #CCC;
   
 .-tcesp-title { } 
 
-.-tcesp-content-area {
-  padding: 1em; }
+.-tcesp-content-area { }
 
 .-tcesp-footer { }
 
@@ -301,17 +301,22 @@ $tcesp-shadow: #CCC;
 
 #search-box {
   float: right;
-  padding: 0.5em 0;
-  .form-item { margin: 0; }
+  padding: 0.9em 0;
+  .form-item { 
+    margin: 0;
+    width: 240px;
+    display: inline-block; }
   label {
     clip: rect(1px, 1px, 1px, 1px);
     position: absolute; }
   .form-text {
     background-color: #BFDBE5;
+    width: 100%;
     padding: 0.25em;
     border: none; }
   .form-submit {
     @include replace-text('search.png');
+    display: inline-block;
     background-color: #eaeaea;
     width: 2.5em;
     height: 100%;
