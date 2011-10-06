@@ -115,7 +115,7 @@ ul.secondary-links  { @extend .-tcesp-secondary-menu; }
 .node {
   @extend .-tcesp-node;
   .picture { @extend .-tcesp-node-picture; }
-  .title { @extend .-tcesp-node-title; }
+  h2 { @extend .-tcesp-node-title; }
   .meta { @extend .-tcesp-node-meta; }
   .submitted { @extend .-tcesp-node-submitted; }
   .terms { @extend .-tcesp-node-terms; }

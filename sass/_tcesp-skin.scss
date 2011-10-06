@@ -325,7 +325,8 @@ $tcesp-shadow: #CCC;
 
 .-tcesp-node-picture { }
 
-.-tcesp-node-title { } //meant for node listings, see also .-tcesp-title
+.-tcesp-node-title {
+  @extend .-tcesp-basic-title; } //meant for node listings, see also .-tcesp-title
 
 .-tcesp-node-meta {
 
