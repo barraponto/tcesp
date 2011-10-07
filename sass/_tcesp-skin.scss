@@ -4,7 +4,7 @@
 $tcesp-width: 960px;
 
 // These variables control the size of the sidebars
-$tcesp-first-sidebar-width: 200px;
+$tcesp-first-sidebar-width: 240px;
 $tcesp-second-sidebar-width: 200px;
 
 // This variable positions the content relative to the sidebars
@@ -21,6 +21,7 @@ $tcesp-base-font-size: 14px;
 
 // Set the palette for TCESP
 $tcesp-shadow: #CCC;
+$tcesp-red: #FDC4C4;
 
 // Some skin base styles
 
@@ -142,9 +143,25 @@ $tcesp-shadow: #CCC;
 
 .-tcesp-navigation { }
 
-.-tcesp-menu { // by default, both menus inherit these styles
-  font-family: $tcesp-versal-typeface;
+.-tcesp-primary-menu { // by default, both menus inherit these styles
+  @include no-bullets;
+  padding: 0;
   > li { // use '>' to target only child items
+    @extend .-tcesp-basic-title;
+    font-size: 1.33em;
+    line-height: 1em;
+    border-top: 1px solid $tcesp-red;
+    padding: 0;
+    a { 
+      @include background(
+        linear-gradient(left, rgba(160, 160, 160, 0) 8px, rgba(160, 160, 160, 0.2) 32px, rgba(0, 0, 0, 0) 32px));
+      display: block;
+      width: 100%;
+      padding: 0.33em 0;
+      margin: 0.33em 0;
+      text-indent: 1.8em;
+      background-color: #FAFAFA;
+      position: relative; }
     &.first { }
     &.last { }
     &.expanded { } } }
@@ -299,8 +316,8 @@ $tcesp-shadow: #CCC;
 .-tcesp-header-block-content { @extend .-tcesp-block-content; }
 
 .-tcesp-content-top-block {
-  border-top: 1px solid #FADCDC;
-  border-bottom: 1px solid #FADCDC;
+  border-top: 1px solid $tcesp-red;
+  border-bottom: 1px solid $tcesp-red;
 }
 
 .-tcesp-content-top-block-title { }
@@ -387,3 +404,7 @@ $tcesp-shadow: #CCC;
     height: 100%;
     padding: 0.25em;
     border: none; } }
+
+#block-user-1 ul.menu { // navigation menu block
+  @extend .-tcesp-primary-menu;
+}

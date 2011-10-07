@@ -1,0 +1,8 @@
+#block-user-1 li.first a:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 32px;
+  background: url('../images/pesquisa.png') no-repeat center center; }
