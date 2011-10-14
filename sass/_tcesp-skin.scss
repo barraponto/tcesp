@@ -270,7 +270,10 @@ $tcesp-red: #FDC4C4;
   .pager-next { }
   .pager-first { }
   .pager-last { }
-  a { } }
+  a { @extend .-tcesp-basic-title;
+      font-size: 1.25em;
+      text-decoration: none;
+      color: #D1D1D1; } }
 
 .-tcesp-feed-icons {
   .feed-icon { } }

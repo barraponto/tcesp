@@ -1,11 +1,11 @@
 /* line 28, ../sass/_tcesp-skin.scss */
-.-tcesp-basic-title, .-tcesp-site-name, #site-name, .-tcesp-primary-menu > li, #block-user-1 ul.menu > li, .-tcesp-title, #page-title, .-tcesp-block-title, .block > h2, .-tcesp-node-title, .node h2 {
+.-tcesp-basic-title, .-tcesp-site-name, #site-name, .-tcesp-primary-menu > li, #block-user-1 ul.menu > li, .-tcesp-pager a, #content .pager a, .-tcesp-title, #page-title, .-tcesp-block-title, .block > h2, .-tcesp-node-title, .node h2 {
   font: 1.5em Amaranth, Verdana, Tahoma, "DejaVu Sans", sans-serif;
   margin: 0;
   color: black;
 }
 /* line 32, ../sass/_tcesp-skin.scss */
-.-tcesp-basic-title a, .-tcesp-site-name a, #site-name a, .-tcesp-primary-menu > li a, #block-user-1 ul.menu > li a, .-tcesp-title a, #page-title a, .-tcesp-block-title a, .block > h2 a, .-tcesp-node-title a, .node h2 a {
+.-tcesp-basic-title a, .-tcesp-site-name a, #site-name a, .-tcesp-primary-menu > li a, #block-user-1 ul.menu > li a, .-tcesp-pager a a, #content .pager a a, .-tcesp-title a, #page-title a, .-tcesp-block-title a, .block > h2 a, .-tcesp-node-title a, .node h2 a {
   color: black;
   text-decoration: none;
 }
@@ -243,22 +243,29 @@
   margin: 0.5em 1em;
 }
 
-/* line 290, ../sass/_tcesp-skin.scss */
+/* line 273, ../sass/_tcesp-skin.scss */
+.-tcesp-pager a, #content .pager a {
+  font-size: 1.25em;
+  text-decoration: none;
+  color: #D1D1D1;
+}
+
+/* line 293, ../sass/_tcesp-skin.scss */
 .-tcesp-block, .block {
   margin: 0.5em 1em;
 }
 
-/* line 293, ../sass/_tcesp-skin.scss */
+/* line 296, ../sass/_tcesp-skin.scss */
 .-tcesp-block-title, .block > h2 {
   margin-bottom: 0.5em;
 }
 
-/* line 302, ../sass/_tcesp-skin.scss */
+/* line 305, ../sass/_tcesp-skin.scss */
 .-tcesp-header-block-title, #header-region .block > h2 {
   text-align: center;
   position: relative;
 }
-/* line 305, ../sass/_tcesp-skin.scss */
+/* line 308, ../sass/_tcesp-skin.scss */
 .-tcesp-header-block-title span, #header-region .block > h2 span {
   background: none repeat scroll 0 0 white;
   display: inline-block;
@@ -266,7 +273,7 @@
   position: relative;
   z-index: 1;
 }
-/* line 312, ../sass/_tcesp-skin.scss */
+/* line 315, ../sass/_tcesp-skin.scss */
 .-tcesp-header-block-title:after, #header-region .block > h2:after, .-tcesp-header-block-title:before, #header-region .block > h2:before {
   height: 1px;
   width: 25%;
@@ -274,7 +281,7 @@
   position: absolute;
   top: 50%;
 }
-/* line 318, ../sass/_tcesp-skin.scss */
+/* line 321, ../sass/_tcesp-skin.scss */
 .-tcesp-header-block-title:before, #header-region .block > h2:before {
   left: 15%;
   background-image: -webkit-gradient(linear, 100% 50%, 0% 50%, color-stop(50%, #fadcdc), color-stop(100%, rgba(250, 220, 220, 0)));
@@ -284,7 +291,7 @@
   background-image: -ms-linear-gradient(right, #fadcdc 50%, rgba(250, 220, 220, 0));
   background-image: linear-gradient(right, #fadcdc 50%, rgba(250, 220, 220, 0));
 }
-/* line 321, ../sass/_tcesp-skin.scss */
+/* line 324, ../sass/_tcesp-skin.scss */
 .-tcesp-header-block-title:after, #header-region .block > h2:after {
   right: 15%;
   background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(50%, #fadcdc), color-stop(100%, rgba(250, 220, 220, 0)));
@@ -295,29 +302,29 @@
   background-image: linear-gradient(left, #fadcdc 50%, rgba(250, 220, 220, 0));
 }
 
-/* line 327, ../sass/_tcesp-skin.scss */
+/* line 330, ../sass/_tcesp-skin.scss */
 .-tcesp-content-top-block, #content-top .block {
   border-top: 1px solid #fdc4c4;
   border-bottom: 1px solid #fdc4c4;
 }
 
-/* line 392, ../sass/_tcesp-skin.scss */
+/* line 395, ../sass/_tcesp-skin.scss */
 #search-box {
   float: right;
   padding: 0.9em 0;
 }
-/* line 395, ../sass/_tcesp-skin.scss */
+/* line 398, ../sass/_tcesp-skin.scss */
 #search-box .form-item {
   margin: 0;
   width: 240px;
   display: inline-block;
 }
-/* line 399, ../sass/_tcesp-skin.scss */
+/* line 402, ../sass/_tcesp-skin.scss */
 #search-box label {
   clip: rect(1px, 1px, 1px, 1px);
   position: absolute;
 }
-/* line 402, ../sass/_tcesp-skin.scss */
+/* line 405, ../sass/_tcesp-skin.scss */
 #search-box .form-text {
   font-family: Amaranth, Verdana, Tahoma, "DejaVu Sans", sans-serif;
   background-color: #BFDBE5;
@@ -325,7 +332,7 @@
   padding: 0.25em;
   border: none;
 }
-/* line 408, ../sass/_tcesp-skin.scss */
+/* line 411, ../sass/_tcesp-skin.scss */
 #search-box .form-submit {
   text-indent: -119988px;
   overflow: hidden;
