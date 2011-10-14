@@ -161,10 +161,19 @@ $tcesp-red: #FDC4C4;
       margin: 0.33em 0;
       text-indent: 1.8em;
       background-color: #FAFAFA;
-      position: relative; }
-    &.first { }
+      position: relative;
+      &:after { 
+         content: "";
+         position: absolute;
+         left: 0;
+         top: 0;
+         height: 100%;
+         width: 32px;
+         // a imagem é colocada no tcesp-menu.css
+         background: url('') no-repeat center center; }
+     &.first { }
     &.last { }
-    &.expanded { } } }
+    &.expanded { } } } }
 
 .-tcesp-secondary-menu-wrapper {
   position: relative;
