@@ -31,8 +31,12 @@ body { @extend .-tcesp-body; }
 #navigation {
   @extend .-tcesp-navigation; }
 
+#primary {
+  @extend .-tcesp-primary-menu-wrapper;
+}
+
 ul.primary-links  {
-  @extend .-tcesp-menu;
+  @extend .-tcesp-primary-menu;
   > li > .links { @extend .-tcesp-submenu; } }
 
 #secondary { @extend .-tcesp-secondary-menu-wrapper; }

@@ -133,9 +133,14 @@
 
     <div id="container" class="clear-block">
 
-      <?php if (!empty($sidebar_first)): ?>
+      <?php if (!empty($primary_links) || !empty($sidebar_first)): ?>
         <div id="sidebar-left" class="column sidebar">
-          <?php print $sidebar_first; ?>
+        <?php if (!empty($primary_links)): ?>
+          <div id="primary" class="clear-block items-<?php print count($primary_links); ?>">
+            <?php print theme('links', $primary_links, array('class' => 'links primary-links')); ?>
+          </div>
+        <?php endif; ?>   
+        <?php print $sidebar_first; ?>
         </div> <!-- /sidebar-left -->
       <?php endif; ?>
 

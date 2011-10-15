@@ -143,11 +143,16 @@ $tcesp-red: #FDC4C4;
 
 .-tcesp-navigation { }
 
+.-tcesp-primary-menu-wrapper {
+  padding: 1em;
+}
+
 .-tcesp-primary-menu { // by default, both menus inherit these styles
   @include no-bullets;
   padding: 0;
   > li { // use '>' to target only child items
     @extend .-tcesp-basic-title;
+    display: block;
     font-size: 1.33em;
     line-height: 1em;
     border-top: 1px solid $tcesp-red;
@@ -156,10 +161,8 @@ $tcesp-red: #FDC4C4;
       @include background(
         linear-gradient(left, rgba(160, 160, 160, 0) 8px, rgba(160, 160, 160, 0.2) 32px, rgba(0, 0, 0, 0) 32px));
       display: block;
-      width: 100%;
-      padding: 0.33em 0;
+      padding: 0.33em 0 0.33em 1.8em;
       margin: 0.33em 0;
-      text-indent: 1.8em;
       background-color: #FAFAFA;
       position: relative;
       &:after { 
@@ -170,10 +173,15 @@ $tcesp-red: #FDC4C4;
          height: 100%;
          width: 32px;
          // a imagem é colocada no tcesp-menu.css
-         background: url('') no-repeat center center; }
-     &.first { }
+         background: url('') no-repeat center center; } }
+    &.first { }
     &.last { }
-    &.expanded { } } } }
+    &.expanded {
+      li { 
+        font-size: 1em;
+        a { 
+          font-size: 0.75em;
+          padding-left: 2.4em; } } } } }
 
 .-tcesp-secondary-menu-wrapper {
   position: relative;
@@ -417,6 +425,3 @@ $tcesp-red: #FDC4C4;
     padding: 0.25em;
     border: none; } }
 
-#block-user-1 ul.menu { // navigation menu block
-  @extend .-tcesp-primary-menu;
-}
