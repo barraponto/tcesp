@@ -6,6 +6,7 @@ engine = phptemplate
 
 stylesheets[all][] = stylesheets/tcesp.css
 stylesheets[all][] = stylesheets/tcesp-menu.css
+stylesheets[all][] = stylesheets/tcesp-colab.css
 
 regions[header] = Header
 regions[sidebar_first] = First sidebar
