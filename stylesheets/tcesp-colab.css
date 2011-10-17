@@ -7,8 +7,34 @@
 }
 
 .tcesp-page-bottom, #page-bottom {
-	background: url('../images/rodape.png');
+	background: url('../images/rodape.png') no-repeat;
 	margin-top: 0px;
 	padding-top: 30px;
 }
 
+.tcesp-content-content, #content-content {
+	font-size: 13px;
+}
+
+.tcesp-content-content h2, #content-content h2 {
+	font-size: 24px; 
+}
+
+.tcesp-content-content .content-type, #content-content .content-type {
+	background-color: #CCCCCC;
+	color: #EB4646;
+	font-family: arial;
+	font-size: 11px;
+	font-weight: bold;
+	margin: 10px;
+	padding: 2px 5px;
+	text-transform: uppercase;
+}
+
+.tcesp-content-content a, #content-content a {
+	color: #000000;
+}
+
+.tcesp-content-content .clear-block, #content-content .clear-block {
+	margin-bottom: 20px;
+}
