@@ -24,7 +24,6 @@ function tcesp_preprocess_comment($vars) {
   $vars['meta_author'] = theme('username', $vars['comment']);
 }
 
-
 /* reimplementando o theme_username para tirar o '(not verified)' */
 function tcesp_username($object) {
 
