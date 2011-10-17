@@ -154,6 +154,12 @@
         <?php endif; ?>
 
         <div id="content">
+          <?php if (!empty($node)): ?>
+            <div class="meta">
+              <?php print '<span class="content-type">' . $meta_type . '</span>'; ?>
+              <?php if (!empty($meta_date)) print '<span class="content-date">' . $meta_date . '</span>';  ?>
+            </div>
+          <?php endif; ?>
           <?php if (!empty($title)): ?><h1 class="title" id="page-title"><?php print $title; ?></h1><?php endif; ?>
           <?php if (!empty($tabs)): ?><div class="tabs"><?php print $tabs; ?></div><?php endif; ?>
           <?php if (!empty($messages)): print $messages; endif; ?>
