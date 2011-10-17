@@ -1,0 +1,14 @@
+.-tcesp-footer, #footer {
+	background-color: #ffffff;
+	margin-top: 10px;
+	padding: 10px;
+	text-align: center;
+	font-size: 12px;
+}
+
+.tcesp-page-bottom, #page-bottom {
+	background: url('../images/rodape.png');
+	margin-top: 0px;
+	padding-top: 30px;
+}
+
