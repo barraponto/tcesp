@@ -17,7 +17,7 @@ $tcesp-proportional-typeface: Verdana, Tahoma, "DejaVu Sans", sans-serif;
 $tcesp-monospaced-typeface: "Courier New", "DejaVu Sans Mono", monospace;
 
 // These variables control the font sizes as defined in html-reset.css
-$tcesp-base-font-size: 14px;
+$tcesp-base-font-size: 0.875em;
 
 // Set the palette for TCESP
 $tcesp-shadow: #CCC;
@@ -34,7 +34,9 @@ $tcesp-red: #FDC4C4;
     text-decoration: none; } }
 
 //HTML Elements
-.-tcesp-h2 { } 
+.-tcesp-h2 {
+  font-size: 1.714em;
+} 
 
 .-tcesp-h3 { }
 
@@ -78,6 +80,7 @@ $tcesp-red: #FDC4C4;
 
 // Content Classes
 .-tcesp-node-content {
+  font-size: $tcesp-base-font-size;
   h2 { @extend .-tcesp-h2; }
   h3 { @extend .-tcesp-h3; }
   h4 { @extend .-tcesp-h4; }
@@ -93,6 +96,7 @@ $tcesp-red: #FDC4C4;
   table { @extend .-tcesp-table; } }
 
 .-tcesp-block-content {
+  font-size: $tcesp-base-font-size;
   h3 { @extend .-tcesp-h3; }
   h4 { @extend .-tcesp-h4; }
   p { @extend .-tcesp-p; }
@@ -103,7 +107,8 @@ $tcesp-red: #FDC4C4;
 
 // Page Components
 .-tcesp-body {
-  @include background-with-css2-fallback(image-url('stripes.png') repeat, linear-gradient(#f9f9f9, #eaeaea 42em)); }
+  @include background-with-css2-fallback(image-url('stripes.png') repeat, linear-gradient(#f9f9f9, #eaeaea 42em));
+  font-size: 100%; /* evitando que o ie faça coisas horríveis */ }
 
 .-tcesp-skip-link { }
 
@@ -358,7 +363,19 @@ $tcesp-red: #FDC4C4;
 
 // Node Components
 // Make copies of these components for a diversity of node styles
-.-tcesp-node { }
+.-tcesp-node {
+  .content-type {
+    background-color: #e8e8e8;
+    color: #EC4545;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 0.5em;
+    font-weight: bold;
+    margin: 0 0 0 1em;
+    padding: 0.25em 0.5em;
+    text-transform: uppercase;
+    vertical-align: middle;
+  }
+}
 
 .-tcesp-node-picture { }
 
