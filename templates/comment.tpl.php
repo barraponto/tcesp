@@ -28,11 +28,7 @@
 <div class="comment<?php print ($comment->new) ? ' comment-new' : ''; print ' '. $status ?> clear-block">
   <?php print $picture ?>
 
-  <?php if ($comment->new): ?>
-    <span class="new"><?php print $new ?></span>
-  <?php endif; ?>
-
-  <h3><?php print $title ?> | <?php print $meta_date ?></h3>
+  <h3><?php print $title ?> | <?php print $meta_date ?><?php if ($comment->new) print ' | <span class="new">' . $new . '</span>'; ?></h3>
 
   <div class="content">
     <?php print $content ?>
