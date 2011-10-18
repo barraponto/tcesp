@@ -657,3 +657,38 @@ body.page-node-node .-tcesp-content, body.page-node-node #content {
 /* user-profile.tpl.php */
 /* comment-wrapper.tpl.php */
 /* comment.tpl.php */
+
+/***********************
+* Estilos dos comments por lucianosb
+***********************/
+#comments h2{
+    margin-bottom: 15px;
+}
+
+.comment {
+    border-bottom: 1px solid #EEEEEE;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+
+.comment:last-child {
+    border: none; /*not working*/
+}
+
+.comment h3 {
+    font-size: 1.2em;
+}
+
+.comment h3 a {
+    border-right: solid 3px #EC4545;
+    padding-right: 20px;
+}
+
+.comment .content {
+    font-size: 0.9em;
+    margin-top: -9px;
+}
+
+.comment div.submitted-by {
+    font-size: 0.8em;
+}
