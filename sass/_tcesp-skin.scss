@@ -93,7 +93,7 @@ $tcesp-vibrant-red: #EC4545 ;
     tbody & { } } }
 
 // Content Classes
-.-tcesp-node-content {
+.-tcesp-full-html-content {
   font-size: $tcesp-base-font-size;
   h2 { @extend .-tcesp-h2; }
   h3 { @extend .-tcesp-h3; }
@@ -109,7 +109,7 @@ $tcesp-vibrant-red: #EC4545 ;
   a { @extend .-tcesp-a; }
   table { @extend .-tcesp-table; } }
 
-.-tcesp-block-content {
+.-tcesp-restricted-html-content {
   font-size: $tcesp-base-font-size;
   h3 { @extend .-tcesp-h3; }
   h4 { @extend .-tcesp-h4; }
@@ -324,7 +324,7 @@ $tcesp-vibrant-red: #EC4545 ;
   @extend .-tcesp-basic-title;
   margin-bottom: 0.5em; }
 
-.-tcesp-block-content { @extend .-tcesp-block-content; }
+.-tcesp-block-content { @extend .-tcesp-restricted-html-content; }
 
 // Make copies of the components for a diversity of block styles, like these
 .-tcesp-header-block { }
@@ -402,7 +402,7 @@ $tcesp-vibrant-red: #EC4545 ;
 
 .-tcesp-node-terms { } }
 
-.-tcesp-node-content { @extend .-tcesp-node-content; }
+.-tcesp-node-content { @extend .-tcesp-full-html-content; }
 
 .-tcesp-node-links {
   li {
@@ -431,6 +431,50 @@ $tcesp-vibrant-red: #EC4545 ;
 
 .-tcesp-profile-field-value { }
 
+// Comment wrapper
+.-tcesp-comments-wrapper { 
+  > h2 { @extend .-tcesp-basic-title; }
+}
+
+// Comment components
+.-tcesp-comment {
+  .comment-date { 
+    color: #999;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 0.66em;
+    margin-left: 1em;
+    white-space: nowrap; }
+  .submitted-by {
+    text-align: right;
+    color: #999;
+    .author { 
+      a { 
+        @include link-colors(#999);
+        text-decoration: none; }
+      font-weight: bold; } } }
+
+.-tcesp-comment-new { }
+
+.-tcesp-comment-published { }
+
+.-tcesp-comment-unpublished { }
+
+.-tcesp-comment-preview { }
+
+.-tcesp-comment-new-marker { }
+
+.-tcesp-comment-title { 
+  @extend .-tcesp-basic-title;
+  a { color: $tcesp-vibrant-red; } }
+
+.-tcesp-comment-submitted { }
+
+.-tcesp-comment-content { @extend .-tcesp-full-html-content; }
+
+.-tcesp-comment-user-signature { }
+
+.-tcesp-comment-links { }
+
 #search-box {
   float: right;
   padding: 0.9em 0;
@@ -455,4 +499,3 @@ $tcesp-vibrant-red: #EC4545 ;
     height: 100%;
     padding: 0.25em;
     border: none; } }
-

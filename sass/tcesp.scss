@@ -137,4 +137,21 @@ ul.secondary-links  { @extend .-tcesp-secondary-menu; }
   dl { @extend .-tcesp-profile-category-wrapper; }
   dt { @extend .-tcesp-profile-field-label; }
   dd { @extend .-tcesp-profile-field-value; } }
-  
+
+/* comment-wrapper.tpl.php */
+#comments { @extend .-tcesp-comments-wrapper; }
+
+/* comment.tpl.php */
+.comment {
+  @extend .-tcesp-comment;
+  &.comment-new{ @extend .-tcesp-comment-new; }
+  &.comment-published{ @extend .-tcesp-comment-published; }
+  &.comment-unpublished{ @extend .-tcesp-comment-unpublished; }
+  &.comment-preview { @extend .-tcesp-comment-preview; }
+  .new { @extend .-tcesp-comment-new-marker; }
+  > h3 { @extend .-tcesp-comment-title; }
+  .submitted { @extend .-tcesp-comment-submitted; }
+  .content { @extend .-tcesp-comment-content; }
+  .user-signature { @extend .-tcesp-comment-user-signature; }
+  .links { @extend .-tcesp-comment-links; }
+}

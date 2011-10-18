@@ -28,18 +28,18 @@
 <div class="comment<?php print ($comment->new) ? ' comment-new' : ''; print ' '. $status ?> clear-block">
   <?php print $picture ?>
 
-  <h3><?php print $title ?> | <?php print $meta_date ?><?php if ($comment->new) print ' | <span class="new">' . $new . '</span>'; ?></h3>
+  <h3><?php print $title ?><span class="comment-date"><?php print $meta_date ?></span><?php if ($comment->new) print ' <span class="new">' . $new . '</span>'; ?></h3>
 
   <div class="content">
     <?php print $content ?>
-    <?php if ($signature): ?>
-    <div class="user-signature clear-block">
-      <?php print $signature ?>
-    </div>
-    <?php endif; ?>
-    <div class="submitted-by">
-      Comentado por: <span class="author"><?php print $meta_author ?></span>
-    </div>
+  </div>
+  <?php if ($signature): ?>
+  <div class="user-signature clear-block">
+    <?php print $signature ?>
+  </div>
+  <?php endif; ?>
+  <div class="submitted-by">
+    Comentado por: <span class="author"><?php print $meta_author ?></span>
   </div>
 
   <?php print $links ?>
