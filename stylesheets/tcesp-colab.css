@@ -1,4 +1,4 @@
-.-tcesp-footer, #footer {
+#footer {
 	background-color: #ffffff;
 	margin-top: 10px;
 	padding: 10px;
@@ -6,12 +6,12 @@
 	font-size: 12px;
 }
 
-.tcesp-page-bottom, #page-bottom {
+#page-bottom {
 	background: url('../images/rodape.png') no-repeat;
 	margin-top: 0px;
 	padding-top: 30px;
 }
 
-.tcesp-content-content .clear-block, #content-content .clear-block {
+#content-content .clear-block {
 	margin-bottom: 20px;
 }
