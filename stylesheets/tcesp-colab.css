@@ -55,3 +55,17 @@
 	font-size: 0.9em;
 	margin: 2px 0 20px;
 }
+
+/* Pager */
+
+li.pager-next {
+    width: 16px; height: 17px; /*informar tamanho certo da imagem */
+    background: url("images/next-pager.png");
+    text-indent: -9999px;
+}
+
+li.pager-last {
+    width: 20px; height: 15px;
+    background: url("images/nextnext-pager.png");
+    text-indent: -9999px;
+}
