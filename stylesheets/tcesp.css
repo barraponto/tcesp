@@ -628,8 +628,8 @@ body.page-node-node .-tcesp-content, body.page-node-node #content {
 /* Search content */
 .search-results hr{
     border : 0;
-    height : 15px;
-    background : url(hr.gif) 50% 0 no-repeat; /*aguardando imagem final*/
+    height : 12px;
+    background : url(../images/hrshadow.png) 50% 0 no-repeat; /*aguardando imagem final*/
     margin : 1em 0;
 }
 
