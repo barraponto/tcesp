@@ -58,3 +58,32 @@ li.pager-last a {
     background: url("../images/nextnext-pager.png") no-repeat;
     text-indent: -9999px !important;
 } */
+
+/* Tabela */
+
+#tabela {
+	border: 1px solid #bacbd1;
+	border-collapse: collapse;
+	font-size: 12px;
+	margin: 0 auto;
+	text-align: center;
+	width: 480px;
+}
+#tabela th {
+	background: #c1dce6;
+	border-color: #c1dce6 #c1dce6 #bacbd1;
+	border-style: solid;
+	border-width: 1px;
+	color: #3b7487;
+	font-size: 1.4em;
+	font-weight: normal;
+	padding: 5px;
+	font-family: Amaranth;
+}
+#tabela td {
+	border-right: 1px dotted #ec4545;
+	border-bottom: 1px solid #bacbd1;
+	text-align: center;
+	color: #666699;
+	padding: 5px 5px;
+}
