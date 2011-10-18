@@ -1,32 +1,105 @@
 @charset "UTF-8";
 /* line 28, ../sass/_tcesp-skin.scss */
-.-tcesp-basic-title, .-tcesp-site-name, #site-name, .-tcesp-primary-menu > li, ul.primary-links > li, .-tcesp-pager a, #content .pager a, .-tcesp-title, #page-title, .-tcesp-block-title, .block > h2, .-tcesp-node-title, .node h2 {
+.-tcesp-basic-title, .-tcesp-site-name, #site-name, .-tcesp-primary-menu > li, ul.primary-links > li, .-tcesp-pager a, #content .pager a, .-tcesp-title, #page-title, .-tcesp-block-title, .block > h2, .-tcesp-node-title, .node > h2 {
   font: 1.5em Amaranth, Verdana, Tahoma, "DejaVu Sans", sans-serif;
   margin: 0;
   color: black;
 }
 /* line 32, ../sass/_tcesp-skin.scss */
-.-tcesp-basic-title a, .-tcesp-site-name a, #site-name a, .-tcesp-primary-menu > li a, ul.primary-links > li a, .-tcesp-pager a a, #content .pager a a, .-tcesp-title a, #page-title a, .-tcesp-block-title a, .block > h2 a, .-tcesp-node-title a, .node h2 a {
+.-tcesp-basic-title a, .-tcesp-site-name a, #site-name a, .-tcesp-primary-menu > li a, ul.primary-links > li a, .-tcesp-pager a a, #content .pager a a, .-tcesp-title a, #page-title a, .-tcesp-block-title a, .block > h2 a, .-tcesp-node-title a, .node > h2 a {
   color: black;
   text-decoration: none;
 }
 
 /* line 37, ../sass/_tcesp-skin.scss */
 .-tcesp-h2, .-tcesp-node-content h2, .node .content h2 {
-  font-size: 1.714em;
+  font-family: Amaranth, Verdana, Tahoma, "DejaVu Sans", sans-serif;
+  font-size: 1.429em;
+  font-weight: normal;
 }
 
-/* line 82, ../sass/_tcesp-skin.scss */
+/* line 42, ../sass/_tcesp-skin.scss */
+.-tcesp-h3, .-tcesp-node-content h3, .node .content h3, .-tcesp-block-content h3, .-tcesp-header-block-content h3, #header-region .block .content h3, .-tcesp-content-top-block-content h3, #content-top .block .content h3, .-tcesp-content-block-content h3, #content-content .block .content h3, .-tcesp-sidebar-block-content h3, #sidebar-left .block .content h3, #sidebar-right .block .content h3, .block .content h3 {
+  font-family: Amaranth, Verdana, Tahoma, "DejaVu Sans", sans-serif;
+  font-size: 1.286em;
+  font-weight: normal;
+}
+
+/* line 47, ../sass/_tcesp-skin.scss */
+.-tcesp-h4, .-tcesp-node-content h4, .node .content h4, .-tcesp-block-content h4, .-tcesp-header-block-content h4, #header-region .block .content h4, .-tcesp-content-top-block-content h4, #content-top .block .content h4, .-tcesp-content-block-content h4, #content-content .block .content h4, .-tcesp-sidebar-block-content h4, #sidebar-left .block .content h4, #sidebar-right .block .content h4, .block .content h4 {
+  font-family: Amaranth, Verdana, Tahoma, "DejaVu Sans", sans-serif;
+  font-size: 1.143em;
+  font-weight: normal;
+}
+
+/* line 52, ../sass/_tcesp-skin.scss */
+.-tcesp-p, .-tcesp-node-content p, .node .content p, .-tcesp-block-content p, .-tcesp-header-block-content p, #header-region .block .content p, .-tcesp-content-top-block-content p, #content-top .block .content p, .-tcesp-content-block-content p, #content-content .block .content p, .-tcesp-sidebar-block-content p, #sidebar-left .block .content p, #sidebar-right .block .content p, .block .content p {
+  margin: 1em 0;
+}
+
+/* line 55, ../sass/_tcesp-skin.scss */
+.-tcesp-li, .-tcesp-node-content li, .node .content li, .-tcesp-block-content li, .-tcesp-header-block-content li, #header-region .block .content li, .-tcesp-content-top-block-content li, #content-top .block .content li, .-tcesp-content-block-content li, #content-content .block .content li, .-tcesp-sidebar-block-content li, #sidebar-left .block .content li, #sidebar-right .block .content li, .block .content li {
+  padding-bottom: 0.25em;
+}
+
+/* line 58, ../sass/_tcesp-skin.scss */
+.-tcesp-ul, .-tcesp-node-content ul, .node .content ul, .-tcesp-block-content ul, .-tcesp-header-block-content ul, #header-region .block .content ul, .-tcesp-content-top-block-content ul, #content-top .block .content ul, .-tcesp-content-block-content ul, #content-content .block .content ul, .-tcesp-sidebar-block-content ul, #sidebar-left .block .content ul, #sidebar-right .block .content ul, .block .content ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 62, ../sass/_tcesp-skin.scss */
+.-tcesp-ol, .-tcesp-node-content ol, .node .content ol, .-tcesp-block-content ol, .-tcesp-header-block-content ol, #header-region .block .content ol, .-tcesp-content-top-block-content ol, #content-top .block .content ol, .-tcesp-content-block-content ol, #content-content .block .content ol, .-tcesp-sidebar-block-content ol, #sidebar-left .block .content ol, #sidebar-right .block .content ol, .block .content ol {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 66, ../sass/_tcesp-skin.scss */
+.-tcesp-blockquote, .-tcesp-node-content blockquote, .node .content blockquote {
+  margin: 1em 4em;
+}
+
+/* line 69, ../sass/_tcesp-skin.scss */
+.-tcesp-cite, .-tcesp-node-content cite, .node .content cite {
+  font-style: italic;
+}
+
+/* line 72, ../sass/_tcesp-skin.scss */
+.-tcesp-a, .-tcesp-node-content a, .node .content a, .-tcesp-block-content a, .-tcesp-header-block-content a, #header-region .block .content a, .-tcesp-content-top-block-content a, #content-top .block .content a, .-tcesp-content-block-content a, #content-content .block .content a, .-tcesp-sidebar-block-content a, #sidebar-left .block .content a, #sidebar-right .block .content a, .block .content a {
+  color: #7c0d0d;
+}
+/* line 18, ../../../../../../../.rvm/gems/ruby-1.9.2-p180@compassdev/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+.-tcesp-a:visited, .-tcesp-node-content a:visited, .node .content a:visited, .-tcesp-block-content a:visited, .-tcesp-header-block-content a:visited, #header-region .block .content a:visited, .-tcesp-content-top-block-content a:visited, #content-top .block .content a:visited, .-tcesp-content-block-content a:visited, #content-content .block .content a:visited, .-tcesp-sidebar-block-content a:visited, #sidebar-left .block .content a:visited, #sidebar-right .block .content a:visited, .block .content a:visited {
+  color: black;
+}
+/* line 24, ../../../../../../../.rvm/gems/ruby-1.9.2-p180@compassdev/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+.-tcesp-a:hover, .-tcesp-node-content a:hover, .node .content a:hover, .-tcesp-block-content a:hover, .-tcesp-header-block-content a:hover, #header-region .block .content a:hover, .-tcesp-content-top-block-content a:hover, #content-top .block .content a:hover, .-tcesp-content-block-content a:hover, #content-content .block .content a:hover, .-tcesp-sidebar-block-content a:hover, #sidebar-left .block .content a:hover, #sidebar-right .block .content a:hover, .block .content a:hover {
+  color: #ec4545;
+}
+/* line 27, ../../../../../../../.rvm/gems/ruby-1.9.2-p180@compassdev/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+.-tcesp-a:active, .-tcesp-node-content a:active, .node .content a:active, .-tcesp-block-content a:active, .-tcesp-header-block-content a:active, #header-region .block .content a:active, .-tcesp-content-top-block-content a:active, #content-top .block .content a:active, .-tcesp-content-block-content a:active, #content-content .block .content a:active, .-tcesp-sidebar-block-content a:active, #sidebar-left .block .content a:active, #sidebar-right .block .content a:active, .block .content a:active {
+  color: #ec4545;
+}
+/* line 74, ../sass/_tcesp-skin.scss */
+.-tcesp-a:link, .-tcesp-node-content a:link, .node .content a:link, .-tcesp-block-content a:link, .-tcesp-header-block-content a:link, #header-region .block .content a:link, .-tcesp-content-top-block-content a:link, #content-top .block .content a:link, .-tcesp-content-block-content a:link, #content-content .block .content a:link, .-tcesp-sidebar-block-content a:link, #sidebar-left .block .content a:link, #sidebar-right .block .content a:link, .block .content a:link {
+  text-decoration: none;
+}
+/* line 76, ../sass/_tcesp-skin.scss */
+.-tcesp-a:hover, .-tcesp-node-content a:hover, .node .content a:hover, .-tcesp-block-content a:hover, .-tcesp-header-block-content a:hover, #header-region .block .content a:hover, .-tcesp-content-top-block-content a:hover, #content-top .block .content a:hover, .-tcesp-content-block-content a:hover, #content-content .block .content a:hover, .-tcesp-sidebar-block-content a:hover, #sidebar-left .block .content a:hover, #sidebar-right .block .content a:hover, .block .content a:hover {
+  text-decoration: underline;
+}
+
+/* line 96, ../sass/_tcesp-skin.scss */
 .-tcesp-node-content, .node .content {
   font-size: 0.875em;
 }
 
-/* line 98, ../sass/_tcesp-skin.scss */
+/* line 112, ../sass/_tcesp-skin.scss */
 .-tcesp-block-content, .-tcesp-header-block-content, #header-region .block .content, .-tcesp-content-top-block-content, #content-top .block .content, .-tcesp-content-block-content, #content-content .block .content, .-tcesp-sidebar-block-content, #sidebar-left .block .content, #sidebar-right .block .content, .block .content {
   font-size: 0.875em;
 }
 
-/* line 109, ../sass/_tcesp-skin.scss */
+/* line 123, ../sass/_tcesp-skin.scss */
 .-tcesp-body, body {
   background: url('../images/stripes.png?1317247346') repeat, -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f9f9f9), color-stop(100%, #eaeaea));
   background: url('../images/stripes.png?1317247346') repeat, -webkit-linear-gradient(#f9f9f9, #eaeaea 42em);
@@ -38,28 +111,28 @@
   /* evitando que o ie faça coisas horríveis */
 }
 
-/* line 115, ../sass/_tcesp-skin.scss */
+/* line 129, ../sass/_tcesp-skin.scss */
 .-tcesp-page, #page {
   padding-top: 2em;
 }
 
-/* line 118, ../sass/_tcesp-skin.scss */
+/* line 132, ../sass/_tcesp-skin.scss */
 .-tcesp-header, #header {
   background-color: white;
 }
 
-/* line 121, ../sass/_tcesp-skin.scss */
+/* line 135, ../sass/_tcesp-skin.scss */
 .-tcesp-logo-title, #logo-title {
   background-image: url('../images/banner.png?1317409968');
 }
 
-/* line 124, ../sass/_tcesp-skin.scss */
+/* line 138, ../sass/_tcesp-skin.scss */
 .-tcesp-logo, #logo {
   display: block;
   padding: 20px;
 }
 
-/* line 129, ../sass/_tcesp-skin.scss */
+/* line 143, ../sass/_tcesp-skin.scss */
 .-tcesp-name-and-slogan, #name-and-slogan {
   *zoom: 1;
 }
@@ -70,30 +143,30 @@
   clear: both;
 }
 
-/* line 132, ../sass/_tcesp-skin.scss */
+/* line 146, ../sass/_tcesp-skin.scss */
 .-tcesp-site-name, #site-name {
   float: left;
   font-size: 1.75em;
   line-height: 1.8em;
   text-indent: 1em;
 }
-/* line 138, ../sass/_tcesp-skin.scss */
+/* line 152, ../sass/_tcesp-skin.scss */
 .-tcesp-site-name a, #site-name a {
   color: #5a5a5a;
   font-family: Amaranth, Verdana, Tahoma, "DejaVu Sans", sans-serif;
 }
 
-/* line 146, ../sass/_tcesp-skin.scss */
+/* line 160, ../sass/_tcesp-skin.scss */
 .-tcesp-container, #container {
   background-color: white;
 }
 
-/* line 151, ../sass/_tcesp-skin.scss */
+/* line 165, ../sass/_tcesp-skin.scss */
 .-tcesp-primary-menu-wrapper, #primary {
   padding: 1em;
 }
 
-/* line 155, ../sass/_tcesp-skin.scss */
+/* line 169, ../sass/_tcesp-skin.scss */
 .-tcesp-primary-menu, ul.primary-links {
   list-style: none;
   padding: 0;
@@ -104,7 +177,7 @@
   list-style-type: none;
   margin-left: 0px;
 }
-/* line 158, ../sass/_tcesp-skin.scss */
+/* line 172, ../sass/_tcesp-skin.scss */
 .-tcesp-primary-menu > li, ul.primary-links > li {
   display: block;
   font-size: 1.33em;
@@ -112,7 +185,7 @@
   border-top: 1px solid #fdc4c4;
   padding: 0;
 }
-/* line 165, ../sass/_tcesp-skin.scss */
+/* line 179, ../sass/_tcesp-skin.scss */
 .-tcesp-primary-menu > li a, ul.primary-links > li a {
   background: -webkit-gradient(linear, 0% 50%, 32 50%, color-stop(25%, rgba(160, 160, 160, 0)), color-stop(100%, rgba(160, 160, 160, 0.2)), color-stop(100%, rgba(0, 0, 0, 0)));
   background: -webkit-linear-gradient(left, rgba(160, 160, 160, 0) 8px, rgba(160, 160, 160, 0.2) 32px, rgba(0, 0, 0, 0) 32px);
@@ -126,7 +199,7 @@
   background-color: #FAFAFA;
   position: relative;
 }
-/* line 173, ../sass/_tcesp-skin.scss */
+/* line 187, ../sass/_tcesp-skin.scss */
 .-tcesp-primary-menu > li a:after, ul.primary-links > li a:after {
   content: "";
   position: absolute;
@@ -136,22 +209,22 @@
   width: 32px;
   background: url("") no-repeat center center;
 }
-/* line 185, ../sass/_tcesp-skin.scss */
+/* line 199, ../sass/_tcesp-skin.scss */
 .-tcesp-primary-menu > li.expanded li, ul.primary-links > li.expanded li {
   font-size: 1em;
 }
-/* line 187, ../sass/_tcesp-skin.scss */
+/* line 201, ../sass/_tcesp-skin.scss */
 .-tcesp-primary-menu > li.expanded li a, ul.primary-links > li.expanded li a {
   font-size: 0.75em;
   padding-left: 2.4em;
 }
 
-/* line 191, ../sass/_tcesp-skin.scss */
+/* line 205, ../sass/_tcesp-skin.scss */
 .-tcesp-secondary-menu-wrapper, #secondary {
   position: relative;
   overflow: visible;
 }
-/* line 194, ../sass/_tcesp-skin.scss */
+/* line 208, ../sass/_tcesp-skin.scss */
 .-tcesp-secondary-menu-wrapper:before, #secondary:before {
   -moz-box-shadow: 0 0 3px #cccccc;
   -webkit-box-shadow: 0 0 3px #cccccc;
@@ -165,32 +238,32 @@
   height: 3px;
   content: "";
 }
-/* line 204, ../sass/_tcesp-skin.scss */
+/* line 218, ../sass/_tcesp-skin.scss */
 .-tcesp-secondary-menu-wrapper.items-1:before, .items-1#secondary:before {
   width: 130px;
 }
-/* line 204, ../sass/_tcesp-skin.scss */
+/* line 218, ../sass/_tcesp-skin.scss */
 .-tcesp-secondary-menu-wrapper.items-2:before, .items-2#secondary:before {
   width: 290px;
 }
-/* line 204, ../sass/_tcesp-skin.scss */
+/* line 218, ../sass/_tcesp-skin.scss */
 .-tcesp-secondary-menu-wrapper.items-3:before, .items-3#secondary:before {
   width: 450px;
 }
-/* line 204, ../sass/_tcesp-skin.scss */
+/* line 218, ../sass/_tcesp-skin.scss */
 .-tcesp-secondary-menu-wrapper.items-4:before, .items-4#secondary:before {
   width: 610px;
 }
-/* line 204, ../sass/_tcesp-skin.scss */
+/* line 218, ../sass/_tcesp-skin.scss */
 .-tcesp-secondary-menu-wrapper.items-5:before, .items-5#secondary:before {
   width: 770px;
 }
-/* line 204, ../sass/_tcesp-skin.scss */
+/* line 218, ../sass/_tcesp-skin.scss */
 .-tcesp-secondary-menu-wrapper.items-6:before, .items-6#secondary:before {
   width: 930px;
 }
 
-/* line 210, ../sass/_tcesp-skin.scss */
+/* line 224, ../sass/_tcesp-skin.scss */
 .-tcesp-secondary-menu, ul.secondary-links {
   margin: 0;
   padding: 0;
@@ -222,19 +295,19 @@
 .-tcesp-secondary-menu li.last, ul.secondary-links li.last {
   padding-right: 0;
 }
-/* line 213, ../sass/_tcesp-skin.scss */
+/* line 227, ../sass/_tcesp-skin.scss */
 .-tcesp-secondary-menu > li, ul.secondary-links > li {
   background-color: white;
   width: 120px;
   position: relative;
   padding: 0.25em 30px 0.25em 10px;
 }
-/* line 218, ../sass/_tcesp-skin.scss */
+/* line 232, ../sass/_tcesp-skin.scss */
 .-tcesp-secondary-menu > li a, ul.secondary-links > li a {
   color: black;
   text-decoration: none;
 }
-/* line 221, ../sass/_tcesp-skin.scss */
+/* line 235, ../sass/_tcesp-skin.scss */
 .-tcesp-secondary-menu > li:after, ul.secondary-links > li:after {
   -moz-box-shadow: 3px 0 3px #cccccc;
   -webkit-box-shadow: 3px 0 3px #cccccc;
@@ -254,49 +327,49 @@
   content: "";
   background-color: white;
 }
-/* line 232, ../sass/_tcesp-skin.scss */
+/* line 246, ../sass/_tcesp-skin.scss */
 .-tcesp-secondary-menu > li.first, ul.secondary-links > li.first {
   padding-left: 0.5em;
 }
-/* line 234, ../sass/_tcesp-skin.scss */
+/* line 248, ../sass/_tcesp-skin.scss */
 .-tcesp-secondary-menu > li.last, ul.secondary-links > li.last {
   padding-right: 0;
 }
-/* line 236, ../sass/_tcesp-skin.scss */
+/* line 250, ../sass/_tcesp-skin.scss */
 .-tcesp-secondary-menu > li.last:after, ul.secondary-links > li.last:after {
   right: -15px;
   z-index: -1;
   width: 30px;
 }
 
-/* line 257, ../sass/_tcesp-skin.scss */
+/* line 271, ../sass/_tcesp-skin.scss */
 .-tcesp-content, #content {
   margin: 0.5em 1em;
 }
 
-/* line 286, ../sass/_tcesp-skin.scss */
+/* line 300, ../sass/_tcesp-skin.scss */
 .-tcesp-pager a, #content .pager a {
   font-size: 1.25em;
   text-decoration: none;
   color: #D1D1D1;
 }
 
-/* line 306, ../sass/_tcesp-skin.scss */
+/* line 320, ../sass/_tcesp-skin.scss */
 .-tcesp-block, .block {
   margin: 0.5em 1em;
 }
 
-/* line 309, ../sass/_tcesp-skin.scss */
+/* line 323, ../sass/_tcesp-skin.scss */
 .-tcesp-block-title, .block > h2 {
   margin-bottom: 0.5em;
 }
 
-/* line 318, ../sass/_tcesp-skin.scss */
+/* line 332, ../sass/_tcesp-skin.scss */
 .-tcesp-header-block-title, #header-region .block > h2 {
   text-align: center;
   position: relative;
 }
-/* line 321, ../sass/_tcesp-skin.scss */
+/* line 335, ../sass/_tcesp-skin.scss */
 .-tcesp-header-block-title span, #header-region .block > h2 span {
   background: none repeat scroll 0 0 white;
   display: inline-block;
@@ -304,7 +377,7 @@
   position: relative;
   z-index: 1;
 }
-/* line 328, ../sass/_tcesp-skin.scss */
+/* line 342, ../sass/_tcesp-skin.scss */
 .-tcesp-header-block-title:after, #header-region .block > h2:after, .-tcesp-header-block-title:before, #header-region .block > h2:before {
   height: 1px;
   width: 25%;
@@ -312,7 +385,7 @@
   position: absolute;
   top: 50%;
 }
-/* line 334, ../sass/_tcesp-skin.scss */
+/* line 348, ../sass/_tcesp-skin.scss */
 .-tcesp-header-block-title:before, #header-region .block > h2:before {
   left: 15%;
   background-image: -webkit-gradient(linear, 100% 50%, 0% 50%, color-stop(50%, #fadcdc), color-stop(100%, rgba(250, 220, 220, 0)));
@@ -322,7 +395,7 @@
   background-image: -ms-linear-gradient(right, #fadcdc 50%, rgba(250, 220, 220, 0));
   background-image: linear-gradient(right, #fadcdc 50%, rgba(250, 220, 220, 0));
 }
-/* line 337, ../sass/_tcesp-skin.scss */
+/* line 351, ../sass/_tcesp-skin.scss */
 .-tcesp-header-block-title:after, #header-region .block > h2:after {
   right: 15%;
   background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(50%, #fadcdc), color-stop(100%, rgba(250, 220, 220, 0)));
@@ -333,16 +406,16 @@
   background-image: linear-gradient(left, #fadcdc 50%, rgba(250, 220, 220, 0));
 }
 
-/* line 343, ../sass/_tcesp-skin.scss */
+/* line 357, ../sass/_tcesp-skin.scss */
 .-tcesp-content-top-block, #content-top .block {
   border-top: 1px solid #fdc4c4;
   border-bottom: 1px solid #fdc4c4;
 }
 
-/* line 367, ../sass/_tcesp-skin.scss */
+/* line 381, ../sass/_tcesp-skin.scss */
 .-tcesp-node .content-type, .node .content-type {
   background-color: #e8e8e8;
-  color: #EC4545;
+  color: #ec4545;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 0.5em;
   font-weight: bold;
@@ -352,23 +425,23 @@
   vertical-align: middle;
 }
 
-/* line 420, ../sass/_tcesp-skin.scss */
+/* line 434, ../sass/_tcesp-skin.scss */
 #search-box {
   float: right;
   padding: 0.9em 0;
 }
-/* line 423, ../sass/_tcesp-skin.scss */
+/* line 437, ../sass/_tcesp-skin.scss */
 #search-box .form-item {
   margin: 0;
   width: 240px;
   display: inline-block;
 }
-/* line 427, ../sass/_tcesp-skin.scss */
+/* line 441, ../sass/_tcesp-skin.scss */
 #search-box label {
   clip: rect(1px, 1px, 1px, 1px);
   position: absolute;
 }
-/* line 430, ../sass/_tcesp-skin.scss */
+/* line 444, ../sass/_tcesp-skin.scss */
 #search-box .form-text {
   font-family: Amaranth, Verdana, Tahoma, "DejaVu Sans", sans-serif;
   background-color: #BFDBE5;
@@ -376,7 +449,7 @@
   padding: 0.25em;
   border: none;
 }
-/* line 436, ../sass/_tcesp-skin.scss */
+/* line 450, ../sass/_tcesp-skin.scss */
 #search-box .form-submit {
   text-indent: -119988px;
   overflow: hidden;

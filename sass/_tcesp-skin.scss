@@ -22,9 +22,9 @@ $tcesp-base-font-size: 0.875em;
 // Set the palette for TCESP
 $tcesp-shadow: #CCC;
 $tcesp-red: #FDC4C4;
+$tcesp-vibrant-red: #EC4545 ;
 
 // Some skin base styles
-
 .-tcesp-basic-title {
   font: 1.5em $tcesp-versal-typeface;
   margin: 0;
@@ -35,31 +35,45 @@ $tcesp-red: #FDC4C4;
 
 //HTML Elements
 .-tcesp-h2 {
-  font-size: 1.714em;
-} 
+  font-family: $tcesp-versal-typeface;
+  font-size: 1.429em;
+  font-weight: normal; } 
 
-.-tcesp-h3 { }
+.-tcesp-h3 {
+  font-family: $tcesp-versal-typeface;
+  font-size: 1.286em;
+  font-weight: normal; }
 
-.-tcesp-h4 { }
+.-tcesp-h4 {
+  font-family: $tcesp-versal-typeface;
+  font-size: 1.143em;
+  font-weight: normal; }
 
-.-tcesp-p { }
+.-tcesp-p { 
+  margin: 1em 0; }
 
-.-tcesp-li { }
+.-tcesp-li {
+  padding-bottom: 0.25em; }
 
-.-tcesp-ul {
-  li { @extend .-tcesp-li; } }
+.-tcesp-ul { 
+  margin: 0;
+  padding: 0; }
 
 .-tcesp-ol {
-  li { @extend .-tcesp-li; } }
+  margin: 0;
+  padding: 0; }
 
-.-tcesp-blockquote { }
+.-tcesp-blockquote {
+  margin: 1em 4em; }
 
-.-tcesp-cite { }
+.-tcesp-cite {
+  font-style: italic; }
 
 .-tcesp-a {
-  &:link { }
+  @include link-colors(darken($tcesp-vibrant-red, 33%), $tcesp-vibrant-red, $tcesp-vibrant-red,darken($tcesp-vibrant-red, 66%));
+  &:link { text-decoration: none; }
   &:visited { }
-  &:hover { }
+  &:hover { text-decoration: underline; }
   &:focus { }
   &:active { } }
 
@@ -366,7 +380,7 @@ $tcesp-red: #FDC4C4;
 .-tcesp-node {
   .content-type {
     background-color: #e8e8e8;
-    color: #EC4545;
+    color: $tcesp-vibrant-red;
     font-family: Helvetica, Arial, sans-serif;
     font-size: 0.5em;
     font-weight: bold;
