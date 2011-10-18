@@ -45,16 +45,17 @@
 
 /* Pager */
 
-li.pager-next {
+
+li.pager-next a {
     width: 16px; height: 17px; /*informar tamanho certo da imagem */
-    background: url("images/next-pager.png");
-    text-indent: -9999px;
+    background: url("../images/next-pager.png") no-repeat;
+    text-indent: -9999px !important;
 }
 
-li.pager-last {
+li.pager-last a {
     width: 20px; height: 15px;
-    background: url("images/nextnext-pager.png");
-    text-indent: -9999px;
+    background: url("../images/nextnext-pager.png") no-repeat;
+    text-indent: -9999px !important;
 }
 =======
 <<<<<<< HEAD
