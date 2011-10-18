@@ -11,3 +11,25 @@
 	margin-top: 0px;
 	padding-top: 30px;
 }
+
+.box h2{
+	font-family: Amaranth;
+	font-size: 1.3em;
+}
+
+.search-results span{
+	font-family: Amaranth;
+	font-size: 1em;
+}
+
+.search-results dt a{
+	color: #ec4545;
+	font-family: Amaranth;
+	font-size: 0.8em;
+	text-decoration: none;
+}
+
+.search-results dd{
+	font-size: 0.9em;
+	margin: 2px 0 20px;
+}
