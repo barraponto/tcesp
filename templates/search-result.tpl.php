@@ -53,3 +53,4 @@
     <p class="search-snippet"><?php print $snippet; ?></p>
   <?php endif; ?>
 </dd>
+<hr />
