@@ -17,6 +17,14 @@
 	font-size: 1.3em;
 }
 
+<<<<<<< HEAD
+=======
+.box h2{
+	font-family: Amaranth;
+	font-size: 1.3em;
+}
+
+>>>>>>> efa4f3e1c033bc109fa7496b98cb1a067012a325
 .search-results span{
 	font-family: Amaranth;
 	font-size: 1em;
@@ -33,5 +41,8 @@
 	font-size: 0.9em;
 	margin: 2px 0 20px;
 }
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> efa4f3e1c033bc109fa7496b98cb1a067012a325
