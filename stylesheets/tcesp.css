@@ -68,15 +68,15 @@
 .-tcesp-a, .-tcesp-full-html-content a, .-tcesp-node-content a, .node .content a, .-tcesp-comment-content a, .comment .content a, .-tcesp-restricted-html-content a, .-tcesp-block-content a, .-tcesp-header-block-content a, #header-region .block .content a, .-tcesp-content-top-block-content a, #content-top .block .content a, .-tcesp-content-block-content a, #content-content .block .content a, .-tcesp-sidebar-block-content a, #sidebar-left .block .content a, #sidebar-right .block .content a, .block .content a {
   color: #7c0d0d;
 }
-/* line 18, /home/barraponto/.rvm/gems/ruby-1.9.2-p180@compassdev/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+/* line 18, ../../../../../../../.rvm/gems/ruby-1.9.2-p180@compassdev/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 .-tcesp-a:visited, .-tcesp-full-html-content a:visited, .-tcesp-node-content a:visited, .node .content a:visited, .-tcesp-comment-content a:visited, .comment .content a:visited, .-tcesp-restricted-html-content a:visited, .-tcesp-block-content a:visited, .-tcesp-header-block-content a:visited, #header-region .block .content a:visited, .-tcesp-content-top-block-content a:visited, #content-top .block .content a:visited, .-tcesp-content-block-content a:visited, #content-content .block .content a:visited, .-tcesp-sidebar-block-content a:visited, #sidebar-left .block .content a:visited, #sidebar-right .block .content a:visited, .block .content a:visited {
   color: black;
 }
-/* line 24, /home/barraponto/.rvm/gems/ruby-1.9.2-p180@compassdev/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+/* line 24, ../../../../../../../.rvm/gems/ruby-1.9.2-p180@compassdev/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 .-tcesp-a:hover, .-tcesp-full-html-content a:hover, .-tcesp-node-content a:hover, .node .content a:hover, .-tcesp-comment-content a:hover, .comment .content a:hover, .-tcesp-restricted-html-content a:hover, .-tcesp-block-content a:hover, .-tcesp-header-block-content a:hover, #header-region .block .content a:hover, .-tcesp-content-top-block-content a:hover, #content-top .block .content a:hover, .-tcesp-content-block-content a:hover, #content-content .block .content a:hover, .-tcesp-sidebar-block-content a:hover, #sidebar-left .block .content a:hover, #sidebar-right .block .content a:hover, .block .content a:hover {
   color: #ec4545;
 }
-/* line 27, /home/barraponto/.rvm/gems/ruby-1.9.2-p180@compassdev/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+/* line 27, ../../../../../../../.rvm/gems/ruby-1.9.2-p180@compassdev/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 .-tcesp-a:active, .-tcesp-full-html-content a:active, .-tcesp-node-content a:active, .node .content a:active, .-tcesp-comment-content a:active, .comment .content a:active, .-tcesp-restricted-html-content a:active, .-tcesp-block-content a:active, .-tcesp-header-block-content a:active, #header-region .block .content a:active, .-tcesp-content-top-block-content a:active, #content-top .block .content a:active, .-tcesp-content-block-content a:active, #content-content .block .content a:active, .-tcesp-sidebar-block-content a:active, #sidebar-left .block .content a:active, #sidebar-right .block .content a:active, .block .content a:active {
   color: #ec4545;
 }
@@ -92,14 +92,16 @@
 /* line 96, ../sass/_tcesp-skin.scss */
 .-tcesp-full-html-content, .-tcesp-node-content, .node .content, .-tcesp-comment-content, .comment .content {
   font-size: 0.875em;
+  line-height: 1.4em;
 }
 
-/* line 112, ../sass/_tcesp-skin.scss */
+/* line 113, ../sass/_tcesp-skin.scss */
 .-tcesp-restricted-html-content, .-tcesp-block-content, .-tcesp-header-block-content, #header-region .block .content, .-tcesp-content-top-block-content, #content-top .block .content, .-tcesp-content-block-content, #content-content .block .content, .-tcesp-sidebar-block-content, #sidebar-left .block .content, #sidebar-right .block .content, .block .content {
   font-size: 0.875em;
+  line-height: 1.4em;
 }
 
-/* line 123, ../sass/_tcesp-skin.scss */
+/* line 125, ../sass/_tcesp-skin.scss */
 .-tcesp-body, body {
   background: url('../images/stripes.png?1317247346') repeat, -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f9f9f9), color-stop(100%, #eaeaea));
   background: url('../images/stripes.png?1317247346') repeat, -webkit-linear-gradient(#f9f9f9, #eaeaea 42em);
@@ -111,73 +113,73 @@
   /* evitando que o ie faça coisas horríveis */
 }
 
-/* line 129, ../sass/_tcesp-skin.scss */
+/* line 131, ../sass/_tcesp-skin.scss */
 .-tcesp-page, #page {
   padding-top: 2em;
 }
 
-/* line 132, ../sass/_tcesp-skin.scss */
+/* line 134, ../sass/_tcesp-skin.scss */
 .-tcesp-header, #header {
   background-color: white;
 }
 
-/* line 135, ../sass/_tcesp-skin.scss */
+/* line 137, ../sass/_tcesp-skin.scss */
 .-tcesp-logo-title, #logo-title {
   background-image: url('../images/banner.png?1317409968');
 }
 
-/* line 138, ../sass/_tcesp-skin.scss */
+/* line 140, ../sass/_tcesp-skin.scss */
 .-tcesp-logo, #logo {
   display: block;
   padding: 20px;
 }
 
-/* line 143, ../sass/_tcesp-skin.scss */
+/* line 145, ../sass/_tcesp-skin.scss */
 .-tcesp-name-and-slogan, #name-and-slogan {
   *zoom: 1;
 }
-/* line 38, /home/barraponto/.rvm/gems/ruby-1.9.2-p180@compassdev/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, ../../../../../../../.rvm/gems/ruby-1.9.2-p180@compassdev/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .-tcesp-name-and-slogan:after, #name-and-slogan:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* line 146, ../sass/_tcesp-skin.scss */
+/* line 148, ../sass/_tcesp-skin.scss */
 .-tcesp-site-name, #site-name {
   float: left;
   font-size: 1.75em;
   line-height: 1.8em;
   text-indent: 1em;
 }
-/* line 152, ../sass/_tcesp-skin.scss */
+/* line 154, ../sass/_tcesp-skin.scss */
 .-tcesp-site-name a, #site-name a {
   color: #5a5a5a;
   font-family: Amaranth, Verdana, Tahoma, "DejaVu Sans", sans-serif;
 }
 
-/* line 160, ../sass/_tcesp-skin.scss */
+/* line 162, ../sass/_tcesp-skin.scss */
 .-tcesp-container, #container {
   background-color: white;
 }
 
-/* line 165, ../sass/_tcesp-skin.scss */
+/* line 167, ../sass/_tcesp-skin.scss */
 .-tcesp-primary-menu-wrapper, #primary {
   padding: 1em;
 }
 
-/* line 169, ../sass/_tcesp-skin.scss */
+/* line 171, ../sass/_tcesp-skin.scss */
 .-tcesp-primary-menu, ul.primary-links {
   list-style: none;
   padding: 0;
 }
-/* line 11, /home/barraponto/.rvm/gems/ruby-1.9.2-p180@compassdev/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/lists/_bullets.scss */
+/* line 11, ../../../../../../../.rvm/gems/ruby-1.9.2-p180@compassdev/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/lists/_bullets.scss */
 .-tcesp-primary-menu li, ul.primary-links li {
   list-style-image: none;
   list-style-type: none;
   margin-left: 0px;
 }
-/* line 172, ../sass/_tcesp-skin.scss */
+/* line 174, ../sass/_tcesp-skin.scss */
 .-tcesp-primary-menu > li, ul.primary-links > li {
   display: block;
   font-size: 1.33em;
@@ -185,7 +187,7 @@
   border-top: 1px solid #fdc4c4;
   padding: 0;
 }
-/* line 179, ../sass/_tcesp-skin.scss */
+/* line 181, ../sass/_tcesp-skin.scss */
 .-tcesp-primary-menu > li a, ul.primary-links > li a {
   background: -webkit-gradient(linear, 0% 50%, 32 50%, color-stop(25%, rgba(160, 160, 160, 0)), color-stop(100%, rgba(160, 160, 160, 0.2)), color-stop(100%, rgba(0, 0, 0, 0)));
   background: -webkit-linear-gradient(left, rgba(160, 160, 160, 0) 8px, rgba(160, 160, 160, 0.2) 32px, rgba(0, 0, 0, 0) 32px);
@@ -199,7 +201,7 @@
   background-color: #FAFAFA;
   position: relative;
 }
-/* line 187, ../sass/_tcesp-skin.scss */
+/* line 189, ../sass/_tcesp-skin.scss */
 .-tcesp-primary-menu > li a:after, ul.primary-links > li a:after {
   content: "";
   position: absolute;
@@ -209,22 +211,22 @@
   width: 32px;
   background: url("") no-repeat center center;
 }
-/* line 199, ../sass/_tcesp-skin.scss */
+/* line 201, ../sass/_tcesp-skin.scss */
 .-tcesp-primary-menu > li.expanded li, ul.primary-links > li.expanded li {
   font-size: 1em;
 }
-/* line 201, ../sass/_tcesp-skin.scss */
+/* line 203, ../sass/_tcesp-skin.scss */
 .-tcesp-primary-menu > li.expanded li a, ul.primary-links > li.expanded li a {
   font-size: 0.75em;
   padding-left: 2.4em;
 }
 
-/* line 205, ../sass/_tcesp-skin.scss */
+/* line 207, ../sass/_tcesp-skin.scss */
 .-tcesp-secondary-menu-wrapper, #secondary {
   position: relative;
   overflow: visible;
 }
-/* line 208, ../sass/_tcesp-skin.scss */
+/* line 210, ../sass/_tcesp-skin.scss */
 .-tcesp-secondary-menu-wrapper:before, #secondary:before {
   -moz-box-shadow: 0 0 3px #cccccc;
   -webkit-box-shadow: 0 0 3px #cccccc;
@@ -238,32 +240,32 @@
   height: 3px;
   content: "";
 }
-/* line 218, ../sass/_tcesp-skin.scss */
+/* line 220, ../sass/_tcesp-skin.scss */
 .-tcesp-secondary-menu-wrapper.items-1:before, .items-1#secondary:before {
   width: 130px;
 }
-/* line 218, ../sass/_tcesp-skin.scss */
+/* line 220, ../sass/_tcesp-skin.scss */
 .-tcesp-secondary-menu-wrapper.items-2:before, .items-2#secondary:before {
   width: 290px;
 }
-/* line 218, ../sass/_tcesp-skin.scss */
+/* line 220, ../sass/_tcesp-skin.scss */
 .-tcesp-secondary-menu-wrapper.items-3:before, .items-3#secondary:before {
   width: 450px;
 }
-/* line 218, ../sass/_tcesp-skin.scss */
+/* line 220, ../sass/_tcesp-skin.scss */
 .-tcesp-secondary-menu-wrapper.items-4:before, .items-4#secondary:before {
   width: 610px;
 }
-/* line 218, ../sass/_tcesp-skin.scss */
+/* line 220, ../sass/_tcesp-skin.scss */
 .-tcesp-secondary-menu-wrapper.items-5:before, .items-5#secondary:before {
   width: 770px;
 }
-/* line 218, ../sass/_tcesp-skin.scss */
+/* line 220, ../sass/_tcesp-skin.scss */
 .-tcesp-secondary-menu-wrapper.items-6:before, .items-6#secondary:before {
   width: 930px;
 }
 
-/* line 224, ../sass/_tcesp-skin.scss */
+/* line 226, ../sass/_tcesp-skin.scss */
 .-tcesp-secondary-menu, ul.secondary-links {
   margin: 0;
   padding: 0;
@@ -272,7 +274,7 @@
   *zoom: 1;
   font-family: Amaranth, Verdana, Tahoma, "DejaVu Sans", sans-serif;
 }
-/* line 60, /home/barraponto/.rvm/gems/ruby-1.9.2-p180@compassdev/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+/* line 60, ../../../../../../../.rvm/gems/ruby-1.9.2-p180@compassdev/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
 .-tcesp-secondary-menu li, ul.secondary-links li {
   list-style-image: none;
   list-style-type: none;
@@ -283,31 +285,31 @@
   padding-left: 4px;
   padding-right: 4px;
 }
-/* line 48, /home/barraponto/.rvm/gems/ruby-1.9.2-p180@compassdev/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+/* line 48, ../../../../../../../.rvm/gems/ruby-1.9.2-p180@compassdev/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
 .-tcesp-secondary-menu li:first-child, ul.secondary-links li:first-child, .-tcesp-secondary-menu li.first, ul.secondary-links li.first {
   padding-left: 0;
 }
-/* line 49, /home/barraponto/.rvm/gems/ruby-1.9.2-p180@compassdev/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+/* line 49, ../../../../../../../.rvm/gems/ruby-1.9.2-p180@compassdev/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
 .-tcesp-secondary-menu li:last-child, ul.secondary-links li:last-child {
   padding-right: 0;
 }
-/* line 50, /home/barraponto/.rvm/gems/ruby-1.9.2-p180@compassdev/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+/* line 50, ../../../../../../../.rvm/gems/ruby-1.9.2-p180@compassdev/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
 .-tcesp-secondary-menu li.last, ul.secondary-links li.last {
   padding-right: 0;
 }
-/* line 227, ../sass/_tcesp-skin.scss */
+/* line 229, ../sass/_tcesp-skin.scss */
 .-tcesp-secondary-menu > li, ul.secondary-links > li {
   background-color: white;
   width: 120px;
   position: relative;
   padding: 0.25em 30px 0.25em 10px;
 }
-/* line 232, ../sass/_tcesp-skin.scss */
+/* line 234, ../sass/_tcesp-skin.scss */
 .-tcesp-secondary-menu > li a, ul.secondary-links > li a {
   color: black;
   text-decoration: none;
 }
-/* line 235, ../sass/_tcesp-skin.scss */
+/* line 237, ../sass/_tcesp-skin.scss */
 .-tcesp-secondary-menu > li:after, ul.secondary-links > li:after {
   -moz-box-shadow: 3px 0 3px #cccccc;
   -webkit-box-shadow: 3px 0 3px #cccccc;
@@ -327,49 +329,93 @@
   content: "";
   background-color: white;
 }
-/* line 246, ../sass/_tcesp-skin.scss */
+/* line 248, ../sass/_tcesp-skin.scss */
 .-tcesp-secondary-menu > li.first, ul.secondary-links > li.first {
   padding-left: 0.5em;
 }
-/* line 248, ../sass/_tcesp-skin.scss */
+/* line 250, ../sass/_tcesp-skin.scss */
 .-tcesp-secondary-menu > li.last, ul.secondary-links > li.last {
   padding-right: 0;
 }
-/* line 250, ../sass/_tcesp-skin.scss */
+/* line 252, ../sass/_tcesp-skin.scss */
 .-tcesp-secondary-menu > li.last:after, ul.secondary-links > li.last:after {
   right: -15px;
   z-index: -1;
   width: 30px;
 }
 
-/* line 271, ../sass/_tcesp-skin.scss */
+/* line 273, ../sass/_tcesp-skin.scss */
 .-tcesp-content, #content {
   margin: 0.5em 1em;
 }
 
-/* line 300, ../sass/_tcesp-skin.scss */
+/* line 276, ../sass/_tcesp-skin.scss */
+.-tcesp-tabs .primary, #content div.tabs .primary {
+  padding: 0;
+  margin: 0.5em 0;
+  border: none;
+}
+/* line 280, ../sass/_tcesp-skin.scss */
+.-tcesp-tabs .secondary, #content div.tabs .secondary {
+  padding: 0;
+  margin: 0.5em 0;
+  border: none;
+}
+/* line 285, ../sass/_tcesp-skin.scss */
+.-tcesp-tabs li, #content div.tabs li {
+  display: inline-block;
+  margin: 0 0.25em 0 0;
+  padding: 0;
+}
+/* line 289, ../sass/_tcesp-skin.scss */
+.-tcesp-tabs a, #content div.tabs a {
+  color: #e61818;
+  background-color: #e8e8e8;
+  border: 1px solid #bbb;
+  margin: 0;
+  padding: 0 1em;
+}
+/* line 18, ../../../../../../../.rvm/gems/ruby-1.9.2-p180@compassdev/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+.-tcesp-tabs a:visited, #content div.tabs a:visited {
+  color: #5c0909;
+}
+/* line 24, ../../../../../../../.rvm/gems/ruby-1.9.2-p180@compassdev/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+.-tcesp-tabs a:hover, #content div.tabs a:hover {
+  color: #ec4545;
+}
+/* line 27, ../../../../../../../.rvm/gems/ruby-1.9.2-p180@compassdev/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+.-tcesp-tabs a:active, #content div.tabs a:active {
+  color: #ec4545;
+}
+/* line 295, ../sass/_tcesp-skin.scss */
+.-tcesp-tabs a.active, #content div.tabs a.active {
+  color: black;
+  background-color: white;
+}
+
+/* line 317, ../sass/_tcesp-skin.scss */
 .-tcesp-pager a, #content .pager a {
   font-size: 1.25em;
   text-decoration: none;
   color: #D1D1D1;
 }
 
-/* line 320, ../sass/_tcesp-skin.scss */
+/* line 337, ../sass/_tcesp-skin.scss */
 .-tcesp-block, .block {
   margin: 0.5em 1em;
 }
 
-/* line 323, ../sass/_tcesp-skin.scss */
+/* line 340, ../sass/_tcesp-skin.scss */
 .-tcesp-block-title, .block > h2 {
   margin-bottom: 0.5em;
 }
 
-/* line 332, ../sass/_tcesp-skin.scss */
+/* line 349, ../sass/_tcesp-skin.scss */
 .-tcesp-header-block-title, #header-region .block > h2 {
   text-align: center;
   position: relative;
 }
-/* line 335, ../sass/_tcesp-skin.scss */
+/* line 352, ../sass/_tcesp-skin.scss */
 .-tcesp-header-block-title span, #header-region .block > h2 span {
   background: none repeat scroll 0 0 white;
   display: inline-block;
@@ -377,7 +423,7 @@
   position: relative;
   z-index: 1;
 }
-/* line 342, ../sass/_tcesp-skin.scss */
+/* line 359, ../sass/_tcesp-skin.scss */
 .-tcesp-header-block-title:after, #header-region .block > h2:after, .-tcesp-header-block-title:before, #header-region .block > h2:before {
   height: 1px;
   width: 25%;
@@ -385,7 +431,7 @@
   position: absolute;
   top: 50%;
 }
-/* line 348, ../sass/_tcesp-skin.scss */
+/* line 365, ../sass/_tcesp-skin.scss */
 .-tcesp-header-block-title:before, #header-region .block > h2:before {
   left: 15%;
   background-image: -webkit-gradient(linear, 100% 50%, 0% 50%, color-stop(50%, #fadcdc), color-stop(100%, rgba(250, 220, 220, 0)));
@@ -395,7 +441,7 @@
   background-image: -ms-linear-gradient(right, #fadcdc 50%, rgba(250, 220, 220, 0));
   background-image: linear-gradient(right, #fadcdc 50%, rgba(250, 220, 220, 0));
 }
-/* line 351, ../sass/_tcesp-skin.scss */
+/* line 368, ../sass/_tcesp-skin.scss */
 .-tcesp-header-block-title:after, #header-region .block > h2:after {
   right: 15%;
   background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(50%, #fadcdc), color-stop(100%, rgba(250, 220, 220, 0)));
@@ -406,13 +452,17 @@
   background-image: linear-gradient(left, #fadcdc 50%, rgba(250, 220, 220, 0));
 }
 
-/* line 357, ../sass/_tcesp-skin.scss */
+/* line 374, ../sass/_tcesp-skin.scss */
 .-tcesp-content-top-block, #content-top .block {
   border-top: 1px solid #fdc4c4;
   border-bottom: 1px solid #fdc4c4;
 }
 
-/* line 381, ../sass/_tcesp-skin.scss */
+/* line 397, ../sass/_tcesp-skin.scss */
+.-tcesp-node, .node {
+  margin-bottom: 1.5em;
+}
+/* line 399, ../sass/_tcesp-skin.scss */
 .-tcesp-node .content-type, .node .content-type {
   background-color: #e8e8e8;
   color: #ec4545;
@@ -425,7 +475,46 @@
   vertical-align: middle;
 }
 
-/* line 441, ../sass/_tcesp-skin.scss */
+/* line 425, ../sass/_tcesp-skin.scss */
+.-tcesp-node-links, .-tcesp-comment-links, .comment .links, .node .links {
+  padding: 0;
+  margin: 0.5em 0;
+  border: none;
+}
+/* line 429, ../sass/_tcesp-skin.scss */
+.-tcesp-node-links li, .-tcesp-comment-links li, .comment .links li, .node .links li {
+  display: inline-block;
+  margin: 0 0.25em 0 0;
+  padding: 0;
+}
+/* line 435, ../sass/_tcesp-skin.scss */
+.-tcesp-node-links a, .-tcesp-comment-links a, .comment .links a, .node .links a {
+  color: #e61818;
+  font-size: 0.75em;
+  text-decoration: none;
+  background-color: #e8e8e8;
+  margin: 0;
+  padding: 0.25em 1em;
+}
+/* line 18, ../../../../../../../.rvm/gems/ruby-1.9.2-p180@compassdev/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+.-tcesp-node-links a:visited, .-tcesp-comment-links a:visited, .comment .links a:visited, .node .links a:visited {
+  color: #5c0909;
+}
+/* line 24, ../../../../../../../.rvm/gems/ruby-1.9.2-p180@compassdev/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+.-tcesp-node-links a:hover, .-tcesp-comment-links a:hover, .comment .links a:hover, .node .links a:hover {
+  color: #ec4545;
+}
+/* line 27, ../../../../../../../.rvm/gems/ruby-1.9.2-p180@compassdev/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+.-tcesp-node-links a:active, .-tcesp-comment-links a:active, .comment .links a:active, .node .links a:active {
+  color: #ec4545;
+}
+/* line 442, ../sass/_tcesp-skin.scss */
+.-tcesp-node-links a.active, .-tcesp-comment-links a.active, .comment .links a.active, .node .links a.active {
+  color: black;
+  background-color: white;
+}
+
+/* line 475, ../sass/_tcesp-skin.scss */
 .-tcesp-comment .comment-date, .comment .comment-date {
   color: #999;
   font-family: Helvetica, Arial, sans-serif;
@@ -433,43 +522,49 @@
   margin-left: 1em;
   white-space: nowrap;
 }
-/* line 447, ../sass/_tcesp-skin.scss */
+/* line 481, ../sass/_tcesp-skin.scss */
 .-tcesp-comment .submitted-by, .comment .submitted-by {
+  margin-top: 0.25em;
   text-align: right;
   color: #999;
 }
-/* line 450, ../sass/_tcesp-skin.scss */
+/* line 485, ../sass/_tcesp-skin.scss */
 .-tcesp-comment .submitted-by .author, .comment .submitted-by .author {
   font-weight: bold;
 }
-/* line 451, ../sass/_tcesp-skin.scss */
+/* line 486, ../sass/_tcesp-skin.scss */
 .-tcesp-comment .submitted-by .author a, .comment .submitted-by .author a {
   color: #999999;
   text-decoration: none;
 }
 
-/* line 468, ../sass/_tcesp-skin.scss */
+/* line 503, ../sass/_tcesp-skin.scss */
 .-tcesp-comment-title a, .comment > h3 a {
   color: #ec4545;
 }
 
-/* line 478, ../sass/_tcesp-skin.scss */
+/* line 511, ../sass/_tcesp-skin.scss */
+.-tcesp-comment-links, .comment .links {
+  margin-top: -1.25em;
+}
+
+/* line 516, ../sass/_tcesp-skin.scss */
 #search-box {
   float: right;
   padding: 0.9em 0;
 }
-/* line 481, ../sass/_tcesp-skin.scss */
+/* line 519, ../sass/_tcesp-skin.scss */
 #search-box .form-item {
   margin: 0;
   width: 240px;
   display: inline-block;
 }
-/* line 485, ../sass/_tcesp-skin.scss */
+/* line 523, ../sass/_tcesp-skin.scss */
 #search-box label {
   clip: rect(1px, 1px, 1px, 1px);
   position: absolute;
 }
-/* line 488, ../sass/_tcesp-skin.scss */
+/* line 526, ../sass/_tcesp-skin.scss */
 #search-box .form-text {
   font-family: Amaranth, Verdana, Tahoma, "DejaVu Sans", sans-serif;
   background-color: #BFDBE5;
@@ -477,7 +572,7 @@
   padding: 0.25em;
   border: none;
 }
-/* line 494, ../sass/_tcesp-skin.scss */
+/* line 532, ../sass/_tcesp-skin.scss */
 #search-box .form-submit {
   text-indent: -119988px;
   overflow: hidden;

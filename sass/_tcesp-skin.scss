@@ -95,6 +95,7 @@ $tcesp-vibrant-red: #EC4545 ;
 // Content Classes
 .-tcesp-full-html-content {
   font-size: $tcesp-base-font-size;
+  line-height: 1.4em;
   h2 { @extend .-tcesp-h2; }
   h3 { @extend .-tcesp-h3; }
   h4 { @extend .-tcesp-h4; }
@@ -111,6 +112,7 @@ $tcesp-vibrant-red: #EC4545 ;
 
 .-tcesp-restricted-html-content {
   font-size: $tcesp-base-font-size;
+  line-height: 1.4em;
   h3 { @extend .-tcesp-h3; }
   h4 { @extend .-tcesp-h4; }
   p { @extend .-tcesp-p; }
@@ -271,13 +273,28 @@ $tcesp-vibrant-red: #EC4545 ;
 .-tcesp-content { margin: 0.5em 1em; }
 
 .-tcesp-tabs {
-  .primary { }
-  .secondary { }
+  .primary {
+    padding: 0;
+    margin: 0.5em 0;
+    border: none; }
+  .secondary {
+    padding: 0;
+    margin: 0.5em 0;
+    border: none; }
   // the following styles apply to both tab groups.
-  ul { }
-  li { } 
-  a { } 
-  a.active { } }
+  li {
+    display: inline-block;
+    margin: 0 0.25em 0 0;
+    padding: 0; } 
+  a {
+    @include link-colors(darken($tcesp-vibrant-red, 10%), $tcesp-vibrant-red, $tcesp-vibrant-red, darken($tcesp-vibrant-red, 40%));
+    background-color: #e8e8e8;
+    border: 1px solid #bbb;
+    margin: 0;
+    padding: 0 1em; } 
+  a.active {
+    color: black;
+    background-color: white; } }
 
 .-tcesp-messages {
   &.status { }
@@ -378,6 +395,7 @@ $tcesp-vibrant-red: #EC4545 ;
 // Node Components
 // Make copies of these components for a diversity of node styles
 .-tcesp-node {
+  margin-bottom: 1.5em;
   .content-type {
     background-color: #e8e8e8;
     color: $tcesp-vibrant-red;
@@ -405,9 +423,25 @@ $tcesp-vibrant-red: #EC4545 ;
 .-tcesp-node-content { @extend .-tcesp-full-html-content; }
 
 .-tcesp-node-links {
+  padding: 0;
+  margin: 0.5em 0;
+  border: none;
   li {
+    display: inline-block;
+    margin: 0 0.25em 0 0;
+    padding: 0;
     &.first { }
-    &.last { } } }
+    &.last { } }
+  a {
+    @include link-colors(darken($tcesp-vibrant-red, 10%), $tcesp-vibrant-red, $tcesp-vibrant-red, darken($tcesp-vibrant-red, 40%));
+    font-size: 0.75em;
+    text-decoration: none;
+    background-color: #e8e8e8;
+    margin: 0;
+    padding: 0.25em 1em; } 
+  a.active {
+    color: black;
+    background-color: white; } }
 
 .-tcesp-node-sticky { }
 
@@ -445,6 +479,7 @@ $tcesp-vibrant-red: #EC4545 ;
     margin-left: 1em;
     white-space: nowrap; }
   .submitted-by {
+    margin-top: 0.25em;
     text-align: right;
     color: #999;
     .author { 
@@ -473,7 +508,10 @@ $tcesp-vibrant-red: #EC4545 ;
 
 .-tcesp-comment-user-signature { }
 
-.-tcesp-comment-links { }
+.-tcesp-comment-links {
+  @extend .-tcesp-node-links;
+  margin-top: -1.25em;
+}
 
 #search-box {
   float: right;
