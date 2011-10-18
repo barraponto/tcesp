@@ -9,6 +9,9 @@ function tcesp_preprocess_page($vars) {
       $vars['meta_date'] = format_date($vars['node']->created, 'custom', 'j \d\e F \d\e Y');
     }
   }
+  if (arg(0) == 'node' &! arg(1)) {
+    $vars['body_classes'] .= ' page-node-node';
+  }
 }
 
 function tcesp_preprocess_block($vars) {

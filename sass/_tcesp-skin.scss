@@ -129,7 +129,23 @@ $tcesp-vibrant-red: #EC4545 ;
 .-tcesp-skip-link { }
 
 .-tcesp-page {
-  padding-top: 2em; }
+  padding-top: 2em;
+  .meta { 
+    margin-bottom: 0.5em;
+    > * { display: inline-block; }
+  .content-type {
+    background-color: #e8e8e8;
+    color: $tcesp-vibrant-red;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 0.75em;
+    font-weight: bold;
+    margin: 0 0.5em 0 0;
+    padding: 0.25em 0.5em;
+    text-transform: uppercase;
+    vertical-align: middle; }
+  .content-date { 
+    font-size: 0.8em;
+    color: #999; } } }
 
 .-tcesp-header {
   background-color: white; }
@@ -270,7 +286,11 @@ $tcesp-vibrant-red: #EC4545 ;
 .-tcesp-breadcrumb {
   a { } }
 
-.-tcesp-content { margin: 0.5em 1em; }
+.-tcesp-content { 
+  body.page-node-node & {
+    border-top: 1px solid $tcesp-red;
+    padding-top: 0.33em; }
+  margin: 1em; }
 
 .-tcesp-tabs {
   .primary {
@@ -412,7 +432,10 @@ $tcesp-vibrant-red: #EC4545 ;
 .-tcesp-node-picture { }
 
 .-tcesp-node-title {
-  @extend .-tcesp-basic-title; } //meant for node listings, see also .-tcesp-title
+  @extend .-tcesp-basic-title;
+  font-size: 1.33em;
+  line-height: 1em;
+  margin: 0.33em 0; } //meant for node listings, see also .-tcesp-title
 
 .-tcesp-node-meta {
 
