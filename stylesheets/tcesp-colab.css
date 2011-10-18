@@ -42,9 +42,14 @@
 	margin: 2px 0 20px;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> barraponto/master
+<<<<<<< HEAD
 
 /* Pager */
 
+<<<<<<< HEAD
 
 li.pager-next a {
     width: 16px; height: 17px; /*informar tamanho certo da imagem */
@@ -56,7 +61,27 @@ li.pager-last a {
     width: 20px; height: 15px;
     background: url("../images/nextnext-pager.png") no-repeat;
     text-indent: -9999px !important;
+=======
+li.pager-next {
+    width: 20px !important; height: 15px !important; /*informar tamanho certo da imagem */
+    background: url('../images/next-pager.png') !important;
+    text-indent: -9999px !important;
 }
+
+li.pager-last {
+    width: 20px !important; height: 15px !important;
+    background: url('../images/nextnext-pager.png') no-repeat !important;
+    text-indent: -9999px !important;
+}
+
+li.pager-last span {
+    display: none;
+>>>>>>> liviamorim/master
+}
+<<<<<<< HEAD
+
+>>>>>>> barraponto/master
+=======
 =======
 <<<<<<< HEAD
 
@@ -64,3 +89,4 @@ li.pager-last a {
 =======
 >>>>>>> efa4f3e1c033bc109fa7496b98cb1a067012a325
 >>>>>>> liviamorim/master
+>>>>>>> barraponto/master
