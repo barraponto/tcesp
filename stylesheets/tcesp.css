@@ -625,6 +625,14 @@ body.page-node-node .-tcesp-content, body.page-node-node #content {
   border: none;
 }
 
+/* Search content */
+.search-results hr{
+    border : 0;
+    height : 15px;
+    background : url(hr.gif) 50% 0 no-repeat; /*aguardando imagem final*/
+    margin : 1em 0;
+}
+
 /* page.tpl.php */
 /* line 9, ../sass/tcesp.scss */
 #page {
