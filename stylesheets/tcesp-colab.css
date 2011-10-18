@@ -17,28 +17,14 @@
 	font-size: 1.3em;
 }
 
-.search-results span{
-	font-family: Amaranth;
-	font-size: 1em;
-}
-
-.search-results dt a{
-	color: #ec4545;
-	font-family: Amaranth;
-	font-size: 0.8em;
-	text-decoration: none;
-}
-
-.search-results dd{
-	font-size: 0.9em;
-	margin: 2px 0 20px;
-}
-
+<<<<<<< HEAD
+=======
 .box h2{
 	font-family: Amaranth;
 	font-size: 1.3em;
 }
 
+>>>>>>> efa4f3e1c033bc109fa7496b98cb1a067012a325
 .search-results span{
 	font-family: Amaranth;
 	font-size: 1em;
@@ -55,6 +41,7 @@
 	font-size: 0.9em;
 	margin: 2px 0 20px;
 }
+<<<<<<< HEAD
 
 /* Pager */
 
@@ -69,3 +56,10 @@ li.pager-last {
     background: url("images/nextnext-pager.png");
     text-indent: -9999px;
 }
+=======
+<<<<<<< HEAD
+
+
+=======
+>>>>>>> efa4f3e1c033bc109fa7496b98cb1a067012a325
+>>>>>>> liviamorim/master
