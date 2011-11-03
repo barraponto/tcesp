@@ -1,0 +1,6 @@
+@font-face {
+  font-family: 'Amaranth';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Amaranth'), url('../fonts/amaranth.woff') format('woff');
+}

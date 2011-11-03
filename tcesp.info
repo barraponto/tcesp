@@ -3,6 +3,7 @@ description = Tema desenvolvido para o Tribunal de Contas do Estado de São Paul
 core = 6.x
 engine = phptemplate
 
+stylesheets[all][] = stylesheets/amaranth.css
 stylesheets[all][] = stylesheets/tcesp.css
 stylesheets[all][] = stylesheets/tcesp-menu.css
 
