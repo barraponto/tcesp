@@ -1,5 +1,15 @@
 <?php 
 
+function tcesp_theme() {
+  return array(
+    'search_theme_form' => array(
+      'arguments' => array(
+        'form' => NULL,
+      ),
+    ),
+  );
+}
+
 function tcesp_preprocess_page($vars) {
   drupal_set_html_head('<link href="http://fonts.googleapis.com/css?family=Amaranth:400" rel="stylesheet" type="text/css">');
   $vars['head'] = drupal_get_html_head();
@@ -74,4 +84,9 @@ function tcesp_username($object) {
   return $output;
 }
 
+function tcesp_search_theme_form($form) {
 
+  $form['search_theme_form']['#attributes']['placeholder'] = 'Busca';
+
+  return drupal_render($form);
+}
