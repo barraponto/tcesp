@@ -113,7 +113,13 @@ ul.secondary-links  { @extend .-tcesp-secondary-menu; }
   #sidebar-right & { 
     @extend .-tcesp-sidebar-block;
     > h2 { @extend .-tcesp-sidebar-block-title; }
-    .content { @extend .-tcesp-sidebar-block-content; } } }
+    .content { @extend .-tcesp-sidebar-block-content; } } 
+  
+  #page-bottom & { 
+    @extend .-tcesp-page-bottom-block; 
+    > h2 { @extend .-tcesp-page-bottom-block-title; }
+    .content { @extend .-tcesp-page-bottom-block-content; } }
+}
 
 /* node.tpl.php */
 .node {

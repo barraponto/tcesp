@@ -412,6 +412,31 @@ $tcesp-vibrant-red: #EC4545 ;
 
 .-tcesp-sidebar-block-content { @extend .-tcesp-block-content; }
 
+.-tcesp-page-bottom-block { }
+
+.-tcesp-page-bottom-block-title {
+	font-size:15px;
+}
+
+.-tcesp-page-bottom-block-content { 
+  @extend .-tcesp-block-content;
+  .menu {
+    margin:0;
+    padding:0;
+    list-style-type: none;
+    > li { 
+      list-style: none;
+      background-image:url(../images/flecha_vermelha.png);
+      background-repeat: no-repeat;
+      background-position: 0 50%;
+      padding: 1px 0 1px 10px;
+      margin-bottom:-5px;
+      margin-left:-1px;
+      font-family:Arial;
+      font-size:11px; 
+      a { 
+        color:#474747; } } } }
+
 // Node Components
 // Make copies of these components for a diversity of node styles
 .-tcesp-node {

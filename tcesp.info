@@ -1,4 +1,3 @@
-
 name = TCE-SP
 description = Tema desenvolvido para o Tribunal de Contas do Estado de São Paulo
 core = 6.x
@@ -7,7 +6,6 @@ engine = phptemplate
 stylesheets[all][] = stylesheets/tcesp.css
 stylesheets[all][] = stylesheets/tcesp-menu.css
 stylesheets[all][] = stylesheets/tcesp-colab.css
-stylesheets[all][] = stylesheets/tcesp-menu-bottom.css
 
 regions[header] = Header
 regions[sidebar_first] = First sidebar
