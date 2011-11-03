@@ -183,7 +183,7 @@
     </div> <!-- /container -->
 
     <?php if($page_bottom): ?>
-      <div id="page-bottom">
+    <div id="page-bottom" class="<?php print $page_bottom_block_count; ?>">
         <?php print $page_bottom; ?>
       </div>
     <?php endif; ?>

@@ -199,16 +199,15 @@ $tcesp-vibrant-red: #EC4545 ;
   background-color: white; }
 
 .-tcesp-page-bottom { 
+  @include pie-clearfix;
+  padding: 2em;
 	background: url('../images/rodape.png') no-repeat;
-	margin-top: 0px;
-	padding-top: 30px;
-}
+	margin-top: 0px; }
 
 .-tcesp-navigation { }
 
 .-tcesp-primary-menu-wrapper {
-  padding: 1em;
-}
+  padding: 1em; }
 
 .-tcesp-primary-menu { // by default, both menus inherit these styles
   @include no-bullets;
@@ -464,10 +463,13 @@ $tcesp-vibrant-red: #EC4545 ;
 
 .-tcesp-sidebar-block-content { @extend .-tcesp-block-content; }
 
-.-tcesp-page-bottom-block { }
+.-tcesp-page-bottom-block {
+  float: left;
+  width: 20%;
+}
 
 .-tcesp-page-bottom-block-title {
-	font-size:15px;
+	font-size: 15px;
 }
 
 .-tcesp-page-bottom-block-content { 

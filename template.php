@@ -12,6 +12,7 @@ function tcesp_preprocess_page($vars) {
   if (arg(0) == 'node' &! arg(1)) {
     $vars['body_classes'] .= ' page-node-node';
   }
+  $vars['page_bottom_block_count'] = 'blocks-' . count(block_list('page_bottom'));
 }
 
 function tcesp_preprocess_block($vars) {
