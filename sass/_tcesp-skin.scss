@@ -82,12 +82,32 @@ $tcesp-vibrant-red: #EC4545 ;
 .-tcesp-code { }
 
 .-tcesp-table {
+	border: 1px solid #bacbd1;
+	border-collapse: collapse;
+	font-size: 12px;
+	margin: 0 auto;
+	text-align: center;
+	width: 480px;
   caption { }
   tr {
     &.odd { }
     &.even { }
-    th { }
-    td { }
+    th {
+      background: #c1dce6;
+      border-color: #c1dce6 #c1dce6 #bacbd1;
+      border-style: solid;
+      border-width: 1px;
+      color: #3b7487;
+      font-size: 1.4em;
+      font-weight: normal;
+      padding: 5px;
+      font-family: Amaranth; }
+    td {
+      border-right: 1px dotted #ec4545;
+      border-bottom: 1px solid #bacbd1;
+      text-align: center;
+      color: #666699;
+      padding: 5px 5px; }
     thead & { }
     tfoot & { }
     tbody & { } } }
@@ -177,6 +197,12 @@ $tcesp-vibrant-red: #EC4545 ;
 
 .-tcesp-container {
   background-color: white; }
+
+.-tcesp-page-bottom { 
+	background: url('../images/rodape.png') no-repeat;
+	margin-top: 0px;
+	padding-top: 30px;
+}
 
 .-tcesp-navigation { }
 
@@ -348,7 +374,13 @@ $tcesp-vibrant-red: #EC4545 ;
 
 .-tcesp-content-area { }
 
-.-tcesp-footer { }
+.-tcesp-footer {
+	background-color: #ffffff;
+	margin-top: 10px;
+	padding: 10px;
+	text-align: center;
+	font-size: 12px;
+}
 
 .-tcesp-footer-message { }
 
@@ -585,3 +617,25 @@ $tcesp-vibrant-red: #EC4545 ;
     height: 100%;
     padding: 0.25em;
     border: none; } }
+
+.page-search {
+  .box h2{
+    font-family: Amaranth;
+    font-size: 1.3em;
+  }
+
+  .search-results {
+    span {
+      font-family: Amaranth;
+      font-size: 1em; }
+    dt a {
+      color: #ec4545;
+      font-family: Amaranth;
+      font-size: 0.8em;
+      text-decoration: none;}
+
+    dd {
+      font-size: 0.9em;
+      margin: 2px 0 20px; } }
+}
+

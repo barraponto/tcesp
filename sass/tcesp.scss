@@ -28,6 +28,8 @@ body { @extend .-tcesp-body; }
 
 #container { @extend .-tcesp-container; }
 
+#page-bottom { @extend .-tcesp-page-bottom; }
+
 #navigation {
   @extend .-tcesp-navigation; }
 
@@ -161,3 +163,4 @@ ul.secondary-links  { @extend .-tcesp-secondary-menu; }
   .user-signature { @extend .-tcesp-comment-user-signature; }
   .links { @extend .-tcesp-comment-links; }
 }
+
