@@ -13,7 +13,7 @@ $tcesp-content-position: "middle";
 
 // These variables control the typefaces as defined in html-reset.css
 $tcesp-versal-typeface: Amaranth, Verdana, Tahoma, "DejaVu Sans", sans-serif; 
-$tcesp-proportional-typeface: Verdana, Tahoma, "DejaVu Sans", sans-serif;
+$tcesp-proportional-typeface: Helvetica, Arial, "DejaVu Sans", sans-serif;
 $tcesp-monospaced-typeface: "Courier New", "DejaVu Sans Mono", monospace;
 
 // These variables control the font sizes as defined in html-reset.css
@@ -661,3 +661,6 @@ $tcesp-vibrant-red: #EC4545 ;
       margin: 2px 0 20px; } }
 }
 
+.page-not-node #content-content { 
+  @extend .-tcesp-full-html-content;
+}
