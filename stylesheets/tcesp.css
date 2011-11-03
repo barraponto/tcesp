@@ -1,6 +1,6 @@
 @charset "UTF-8";
-.-tcesp-basic-title, .-tcesp-site-name, #site-name, .-tcesp-primary-menu > li, ul.primary-links > li, .-tcesp-pager a, #content .pager a, .-tcesp-title, #page-title, .-tcesp-block-title, .block > h2, .-tcesp-node-title, .node > h2, .-tcesp-comments-wrapper > h2, #comments > h2, .-tcesp-comment-title, .comment > h3 { font: 1.5em Amaranth, Verdana, Tahoma, "DejaVu Sans", sans-serif; margin: 0; color: black; }
-.-tcesp-basic-title a, .-tcesp-site-name a, #site-name a, .-tcesp-primary-menu > li a, ul.primary-links > li a, .-tcesp-pager a a, #content .pager a a, .-tcesp-title a, #page-title a, .-tcesp-block-title a, .block > h2 a, .-tcesp-node-title a, .node > h2 a, .-tcesp-comments-wrapper > h2 a, #comments > h2 a, .-tcesp-comment-title a, .comment > h3 a { color: black; text-decoration: none; }
+.-tcesp-basic-title, .-tcesp-site-name, #site-name, .-tcesp-primary-menu > li, ul.primary-links > li, .-tcesp-pager a, #content .pager a, .-tcesp-title, #page-title, .-tcesp-block-title, .block > h2, .-tcesp-node-title, .node > h2, .-tcesp-comments-wrapper > h2, #comments > h2, .-tcesp-comment-title, .comment > h3, #block-views-vw_comunicados-block_1 .views-field-title { font: 1.5em Amaranth, Verdana, Tahoma, "DejaVu Sans", sans-serif; margin: 0; color: black; }
+.-tcesp-basic-title a, .-tcesp-site-name a, #site-name a, .-tcesp-primary-menu > li a, ul.primary-links > li a, .-tcesp-pager a a, #content .pager a a, .-tcesp-title a, #page-title a, .-tcesp-block-title a, .block > h2 a, .-tcesp-node-title a, .node > h2 a, .-tcesp-comments-wrapper > h2 a, #comments > h2 a, .-tcesp-comment-title a, .comment > h3 a, #block-views-vw_comunicados-block_1 .views-field-title a { color: black; text-decoration: none; }
 
 .-tcesp-h2, .-tcesp-full-html-content h2, .-tcesp-node-content h2, .node .content h2, .-tcesp-comment-content h2, .comment .content h2, .page-not-node #content-content h2 { font-family: Amaranth, Verdana, Tahoma, "DejaVu Sans", sans-serif; font-size: 1.429em; font-weight: normal; }
 
@@ -92,7 +92,6 @@
 .-tcesp-secondary-menu > li.last:after, ul.secondary-links > li.last:after { right: -15px; z-index: -1; width: 30px; }
 
 .-tcesp-content, #content { margin: 1em; }
-body.page-node-node .-tcesp-content, body.page-node-node #content { border-top: 1px solid #fdc4c4; padding-top: 0.33em; }
 
 .-tcesp-tabs .primary, #content div.tabs .primary { padding: 0; margin: 0.5em 0; border: none; }
 .-tcesp-tabs .secondary, #content div.tabs .secondary { padding: 0; margin: 0.5em 0; border: none; }
@@ -121,7 +120,7 @@ body.page-node-node .-tcesp-content, body.page-node-node #content { border-top: 
 .-tcesp-header-block-title:before, #header-region .block > h2:before { left: 15%; background-image: -webkit-gradient(linear, 100% 50%, 0% 50%, color-stop(50%, #fadcdc), color-stop(100%, rgba(250, 220, 220, 0))); background-image: -webkit-linear-gradient(right, #fadcdc 50%, rgba(250, 220, 220, 0)); background-image: -moz-linear-gradient(right, #fadcdc 50%, rgba(250, 220, 220, 0)); background-image: -o-linear-gradient(right, #fadcdc 50%, rgba(250, 220, 220, 0)); background-image: -ms-linear-gradient(right, #fadcdc 50%, rgba(250, 220, 220, 0)); background-image: linear-gradient(right, #fadcdc 50%, rgba(250, 220, 220, 0)); }
 .-tcesp-header-block-title:after, #header-region .block > h2:after { right: 15%; background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(50%, #fadcdc), color-stop(100%, rgba(250, 220, 220, 0))); background-image: -webkit-linear-gradient(left, #fadcdc 50%, rgba(250, 220, 220, 0)); background-image: -moz-linear-gradient(left, #fadcdc 50%, rgba(250, 220, 220, 0)); background-image: -o-linear-gradient(left, #fadcdc 50%, rgba(250, 220, 220, 0)); background-image: -ms-linear-gradient(left, #fadcdc 50%, rgba(250, 220, 220, 0)); background-image: linear-gradient(left, #fadcdc 50%, rgba(250, 220, 220, 0)); }
 
-.-tcesp-content-top-block, #content-top .block { border-top: 1px solid #fdc4c4; border-bottom: 1px solid #fdc4c4; }
+.-tcesp-content-top-block, #content-top .block { border-top: 1px solid #fdc4c4; margin-top: 1em; padding-top: 0.66em; border-bottom: 1px solid #fdc4c4; }
 
 .-tcesp-page-bottom-block, #page-bottom .block { float: left; width: 20%; }
 
@@ -163,6 +162,18 @@ body.page-node-node .-tcesp-content, body.page-node-node #content { border-top: 
 .page-search .search-results span { font-family: Amaranth; font-size: 1em; }
 .page-search .search-results dt a { color: #ec4545; font-family: Amaranth; font-size: 0.8em; text-decoration: none; }
 .page-search .search-results dd { font-size: 0.9em; margin: 2px 0 20px; }
+
+#block-views-vw_comunicados-block_1 .view-content { *zoom: 1; }
+#block-views-vw_comunicados-block_1 .view-content:after { content: ""; display: table; clear: both; }
+#block-views-vw_comunicados-block_1 .views-row { border: 2px dotted #EC4545; float: left; width: 40%; margin: 0 2%; padding: 1% 2%; }
+#block-views-vw_comunicados-block_1 .views-field-field-comunic-datapubl-value { font-weight: bold; float: right; width: 80px; text-align: right; line-height: 32px; }
+#block-views-vw_comunicados-block_1 .views-field-title { margin-right: 80px; }
+#block-views-vw_comunicados-block_1 .views-field-title a { font-size: 0.8em; }
+#block-views-vw_comunicados-block_1 .views-field-body { color: #666; }
+#block-views-vw_comunicados-block_1 .views-field-upload-fid { text-align: right; }
+#block-views-vw_comunicados-block_1 .views-field-upload-fid a { color: #666 !important; text-decoration: underline !important; }
+#block-views-vw_comunicados-block_1 .more-link { margin: 0.5em 0; }
+#block-views-vw_comunicados-block_1 .more-link a { color: black !important; text-decoration: underline !important; }
 
 /* page.tpl.php */
 #page { width: 960px; margin: 0 auto; }

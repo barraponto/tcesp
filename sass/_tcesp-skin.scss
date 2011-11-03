@@ -314,9 +314,6 @@ $tcesp-vibrant-red: #EC4545 ;
   a { } }
 
 .-tcesp-content { 
-  body.page-node-node & {
-    border-top: 1px solid $tcesp-red;
-    padding-top: 0.33em; }
   margin: 1em; }
 
 .-tcesp-tabs {
@@ -447,6 +444,8 @@ $tcesp-vibrant-red: #EC4545 ;
 
 .-tcesp-content-top-block {
   border-top: 1px solid $tcesp-red;
+  margin-top: 1em;
+  padding-top: 0.66em;
   border-bottom: 1px solid $tcesp-red;
 }
 
@@ -666,4 +665,37 @@ $tcesp-vibrant-red: #EC4545 ;
 
 .page-not-node #content-content { 
   @extend .-tcesp-full-html-content;
+}
+
+#block-views-vw_comunicados-block_1 { 
+  .view-content {
+    @include pie-clearfix; }
+  .views-row {
+    border: 2px dotted #EC4545;
+    float: left;
+    width: 40%;
+    margin: 0 2%;
+    padding: 1% 2%; }
+  .views-field-field-comunic-datapubl-value {
+    font-weight: bold;
+    float: right;
+    width: 80px;
+    text-align: right;
+    line-height: 32px; } 
+  .views-field-title {
+    @extend .-tcesp-basic-title; 
+    margin-right: 80px;
+    a { font-size: 0.8em; } }
+  .views-field-body {
+    color: #666; }
+  .views-field-upload-fid {
+    text-align: right;
+    a { 
+      color: #666 !important; 
+      text-decoration: underline !important; } }
+    .more-link { 
+      margin: 0.5em 0;
+      a {
+        color: black !important;
+        text-decoration: underline !important; } }
 }
