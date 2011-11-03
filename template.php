@@ -4,7 +4,7 @@ function tcesp_preprocess_page($vars) {
   drupal_set_html_head('<link href="http://fonts.googleapis.com/css?family=Amaranth:400" rel="stylesheet" type="text/css">');
   $vars['head'] = drupal_get_html_head();
   if (!empty($vars['node'])) {
-    $vars['meta_type'] = $vars['node']->type;
+    $vars['meta_type'] = node_get_types('name', $vars['node']);
     if (theme_get_setting('toggle_node_info_' . $vars['node']->type)) {
       $vars['meta_date'] = format_date($vars['node']->created, 'custom', 'j \d\e F \d\e Y');
     }
@@ -16,6 +16,10 @@ function tcesp_preprocess_page($vars) {
     $vars['body_classes'] .= ' page-not-node';
   }
   $vars['page_bottom_block_count'] = 'blocks-' . count(block_list('page_bottom'));
+}
+
+function tcesp_preprocess_node($vars) {
+  $vars['meta_type'] = node_get_types('name', $vars['node']);
 }
 
 function tcesp_preprocess_block($vars) {

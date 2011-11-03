@@ -52,7 +52,7 @@
 <?php print $picture ?>
 
 <?php if (!$page): ?>
-<h2><a href="<?php print $node_url ?>" title="<?php print $title ?>"><?php print $title ?></a><span class="content-type"><?php print $type; ?></span></h2>
+<h2><a href="<?php print $node_url ?>" title="<?php print $title ?>"><?php print $title ?></a><span class="content-type"><?php print $meta_type; ?></span></h2>
 <?php endif; ?>
 
   <div class="meta">
