@@ -276,7 +276,7 @@ $tcesp-vibrant-red: #EC4545 ;
       @include link-colors(black);
       text-decoration: none; }
     &:after {
-      @include box-shadow(3px 0 3px $tcesp-shadow);
+      @include box-shadow(5px 0 3px 1px $tcesp-shadow);
       @include skew(45deg, 0);
       position: absolute;
       right: 15px;
