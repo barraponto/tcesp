@@ -356,10 +356,30 @@ $tcesp-vibrant-red: #EC4545 ;
 .-tcesp-pager {
   .pager-item { }
   .pager-current { }
-  .pager-previous { }
-  .pager-next { }
-  .pager-first { }
-  .pager-last { }
+  .pager-previous {
+    a { 
+      display: inline-block;
+      @include replace-text('tras-pager.png');
+      width: 16px;
+      vertical-align: middle; }  }
+  .pager-next {
+    a { 
+      display: inline-block;
+      @include replace-text('next-pager.png');
+      width: 16px;
+      vertical-align: middle; }  }
+  .pager-first {
+    a { 
+      display: inline-block;
+      @include replace-text('trastras-pager.png');
+      width: 20px;
+      vertical-align: middle; } }
+  .pager-last {
+    a { 
+      display: inline-block;
+      @include replace-text('nextnext-pager.png');
+      width: 20px;
+      vertical-align: middle; } }
   a { @extend .-tcesp-basic-title;
       font-size: 1.25em;
       text-decoration: none;
